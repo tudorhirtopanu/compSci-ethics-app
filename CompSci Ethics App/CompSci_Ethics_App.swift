@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct CompSci_Ethics_AppApp: App {
+struct CompSci_Ethics_App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
     }
 }
