@@ -21,11 +21,11 @@ struct LearnView: View {
                 Text("Ethics")
             })
             
-            NavigationLink(value: LearningDestinations.ethics, label: {
+            NavigationLink(value: LearningDestinations.legal, label: {
                 Text("Legal Issues")
             })
             
-            NavigationLink(value: LearningDestinations.ethics, label: {
+            NavigationLink(value: LearningDestinations.intellectualProperty, label: {
                 Text("Intellectual Property")
             })
             

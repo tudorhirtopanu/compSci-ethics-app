@@ -9,17 +9,20 @@ import SwiftUI
 
 struct RootView: View {
     var body: some View {
-        TabView {
-            LearnView()
-                .tabItem {
-                    Label("Learn", systemImage: "graduationcap.fill")
-                }
-            
-            QuizView()
-                .tabItem {
-                    Label("Quiz", systemImage: "list.dash")
-                }
+        NavigationStack {
+            TabView {
+                LearnView()
+                    .tabItem {
+                        Label("Learn", systemImage: "book.fill")
+                    }
+                
+                QuizView()
+                    .tabItem {
+                        Label("Quiz", systemImage: "graduationcap.fill")
+                    }
+            }
         }
+        .environmentObject(IntellectualPropertyManager())
     }
 }
 
