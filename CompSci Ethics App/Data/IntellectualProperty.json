@@ -1,0 +1,50 @@
+[
+    {
+        "id":0,
+        "title":"Intellectual Property",
+        "definition":"intangible property created by an individual or organisation",
+        "examples":[
+            "Names of your products or brands",
+            "Inventions",
+            "Design or look of your products",
+            "Things you write make or produce"
+        ],
+        "purpose":[
+            "Protects the creator from others profiting from their hard work without their consent.",
+            "Makes it easier to take legal action against anyone who steals or copies it, with an aim of making a profit.",
+            "The type of protection you can get depends on your creation"
+        ],
+        "protectionOverview":[
+            {
+                "id":0,
+                "name":"Copyright",
+                "protects":[
+                    "Literary works",
+                    "Art",
+                    "Music",
+                    "Films",
+                    "Sound Recordings",
+                    "Web Content"
+                ]
+            },
+            {
+                "id":1,
+                "name":"Patents",
+                "protects":[
+                    "Inventions & Products"
+                ],
+                "examples":[
+                    "Machines and machine parts",
+                    "Tools",
+                    "Medicine"
+                ]
+            }
+        ],
+        "typesOfProtection":[
+            {
+                "id":0,
+                "name":"Copyright"
+            }
+        ]
+    }
+]
