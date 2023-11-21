@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+class IntellectualPropertyManager: ObservableObject {
+    
+    @Published var intellectualPropertyData = [IntellectualPropertyData]()
+    
+    init(){
+        self.intellectualPropertyData = DataService.getLocalData()
+    }
+    
+}
