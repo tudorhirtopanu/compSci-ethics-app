@@ -13,6 +13,11 @@ enum LearningDestinations {
     case intellectualProperty
 }
 
+enum IntellectualPropertyChapters {
+    case introduction
+    case copyright
+}
+
 struct LearnView: View {
     var body: some View {
         VStack{
@@ -41,6 +46,8 @@ struct LearnView: View {
                     
                 }
             }
+            
+            
             
         }
     }

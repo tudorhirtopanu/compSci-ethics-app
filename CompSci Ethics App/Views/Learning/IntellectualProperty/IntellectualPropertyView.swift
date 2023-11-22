@@ -18,7 +18,6 @@ struct IntellectualPropertyView: View {
                 
         GeometryReader {geo in
             ScrollView {
-                VStack {
                     VStack(alignment: .leading){
                         if let data = ipm.intellectualPropertyData.first {
                             
@@ -86,10 +85,7 @@ struct IntellectualPropertyView: View {
                                     
                             }
                             
-                            
-                            Button(action: {
-                                
-                            }, label: {
+                            NavigationLink(value: IntellectualPropertyChapters.copyright, label: {
                                 ZStack {
                                     RectangleCard(color: .blue)
                                         .frame(height: 40)
@@ -100,20 +96,26 @@ struct IntellectualPropertyView: View {
                                 }
                             })
                             .padding(.top, 10)
-                            
-                            
 
-                        
                         } else {
                             
                         }
                     }
-                }
             }
             .scrollIndicators(.hidden)
             
         }
         .padding(.horizontal)
+        
+        .navigationDestination(for: IntellectualPropertyChapters.self) { state in
+            switch state {
+            case .introduction:
+                IntellectualPropertyView()
+            case .copyright:
+                CopyrightView()
+                    .environmentObject(ipm)
+            }
+        }
     }
 }
 

@@ -13,6 +13,16 @@
 		8B1454732B0BF75E001AB56D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1454722B0BF75E001AB56D /* Preview Assets.xcassets */; };
 		8B14547A2B0C0542001AB56D /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1454792B0C0542001AB56D /* LearnView.swift */; };
 		8B14547C2B0C054D001AB56D /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B14547B2B0C054D001AB56D /* QuizView.swift */; };
+		8B14547F2B0D429F001AB56D /* EthicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B14547E2B0D429F001AB56D /* EthicsView.swift */; };
+		8B1454812B0D4441001AB56D /* LegalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1454802B0D4441001AB56D /* LegalView.swift */; };
+		8B1454832B0D444F001AB56D /* IntellectualPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1454822B0D444F001AB56D /* IntellectualPropertyView.swift */; };
+		8B1454862B0D4490001AB56D /* IntellectualProperty.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B1454852B0D4490001AB56D /* IntellectualProperty.json */; };
+		8B14548C2B0D4DEB001AB56D /* IPBasics.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8B14548B2B0D4DEB001AB56D /* IPBasics.mp4 */; };
+		8B1454912B0D55C3001AB56D /* IntellectualPropertyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1454902B0D55C3001AB56D /* IntellectualPropertyManager.swift */; };
+		8B1454932B0D5785001AB56D /* IntellectualPropertyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1454922B0D5785001AB56D /* IntellectualPropertyData.swift */; };
+		8B1454962B0D5A44001AB56D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1454952B0D5A44001AB56D /* DataService.swift */; };
+		8B1454982B0E9879001AB56D /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1454972B0E9879001AB56D /* RectangleCard.swift */; };
+		8B14549B2B0E9D36001AB56D /* CopyrightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B14549A2B0E9D36001AB56D /* CopyrightView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +33,16 @@
 		8B1454722B0BF75E001AB56D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8B1454792B0C0542001AB56D /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
 		8B14547B2B0C054D001AB56D /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		8B14547E2B0D429F001AB56D /* EthicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthicsView.swift; sourceTree = "<group>"; };
+		8B1454802B0D4441001AB56D /* LegalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalView.swift; sourceTree = "<group>"; };
+		8B1454822B0D444F001AB56D /* IntellectualPropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntellectualPropertyView.swift; sourceTree = "<group>"; };
+		8B1454852B0D4490001AB56D /* IntellectualProperty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IntellectualProperty.json; sourceTree = "<group>"; };
+		8B14548B2B0D4DEB001AB56D /* IPBasics.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IPBasics.mp4; sourceTree = "<group>"; };
+		8B1454902B0D55C3001AB56D /* IntellectualPropertyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntellectualPropertyManager.swift; sourceTree = "<group>"; };
+		8B1454922B0D5785001AB56D /* IntellectualPropertyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntellectualPropertyData.swift; sourceTree = "<group>"; };
+		8B1454952B0D5A44001AB56D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		8B1454972B0E9879001AB56D /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
+		8B14549A2B0E9D36001AB56D /* CopyrightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +77,14 @@
 			children = (
 				8B14546B2B0BF75C001AB56D /* CompSci_Ethics_App.swift */,
 				8B14546D2B0BF75C001AB56D /* RootView.swift */,
-				8B14546F2B0BF75E001AB56D /* Assets.xcassets */,
-				8B1454792B0C0542001AB56D /* LearnView.swift */,
-				8B14547B2B0C054D001AB56D /* QuizView.swift */,
+				8B1454872B0D4C0F001AB56D /* Views */,
+				8B1454882B0D4C1B001AB56D /* Models */,
+				8B1454892B0D4C25001AB56D /* ViewModels */,
+				8B1454842B0D446A001AB56D /* Data */,
+				8B1454942B0D59C8001AB56D /* Services */,
+				8B14548A2B0D4DD6001AB56D /* Resources */,
 				8B1454712B0BF75E001AB56D /* Preview Content */,
+				8B14546F2B0BF75E001AB56D /* Assets.xcassets */,
 			);
 			path = "CompSci Ethics App";
 			sourceTree = "<group>";
@@ -71,6 +95,84 @@
 				8B1454722B0BF75E001AB56D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8B14547D2B0D426B001AB56D /* Learning */ = {
+			isa = PBXGroup;
+			children = (
+				8B14547E2B0D429F001AB56D /* EthicsView.swift */,
+				8B1454802B0D4441001AB56D /* LegalView.swift */,
+				8B1454992B0E9C4F001AB56D /* IntellectualProperty */,
+			);
+			path = Learning;
+			sourceTree = "<group>";
+		};
+		8B1454842B0D446A001AB56D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8B1454852B0D4490001AB56D /* IntellectualProperty.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8B1454872B0D4C0F001AB56D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8B1454792B0C0542001AB56D /* LearnView.swift */,
+				8B14547B2B0C054D001AB56D /* QuizView.swift */,
+				8B14547D2B0D426B001AB56D /* Learning */,
+				8B14548D2B0D4E65001AB56D /* ReusableViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B1454882B0D4C1B001AB56D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B1454922B0D5785001AB56D /* IntellectualPropertyData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B1454892B0D4C25001AB56D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8B1454902B0D55C3001AB56D /* IntellectualPropertyManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8B14548A2B0D4DD6001AB56D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B14548B2B0D4DEB001AB56D /* IPBasics.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B14548D2B0D4E65001AB56D /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				8B1454972B0E9879001AB56D /* RectangleCard.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		8B1454942B0D59C8001AB56D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8B1454952B0D5A44001AB56D /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8B1454992B0E9C4F001AB56D /* IntellectualProperty */ = {
+			isa = PBXGroup;
+			children = (
+				8B1454822B0D444F001AB56D /* IntellectualPropertyView.swift */,
+				8B14549A2B0E9D36001AB56D /* CopyrightView.swift */,
+			);
+			path = IntellectualProperty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +235,8 @@
 			files = (
 				8B1454732B0BF75E001AB56D /* Preview Assets.xcassets in Resources */,
 				8B1454702B0BF75E001AB56D /* Assets.xcassets in Resources */,
+				8B1454862B0D4490001AB56D /* IntellectualProperty.json in Resources */,
+				8B14548C2B0D4DEB001AB56D /* IPBasics.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,10 +247,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1454932B0D5785001AB56D /* IntellectualPropertyData.swift in Sources */,
 				8B14546E2B0BF75C001AB56D /* RootView.swift in Sources */,
+				8B1454912B0D55C3001AB56D /* IntellectualPropertyManager.swift in Sources */,
 				8B14547C2B0C054D001AB56D /* QuizView.swift in Sources */,
+				8B1454962B0D5A44001AB56D /* DataService.swift in Sources */,
+				8B14547F2B0D429F001AB56D /* EthicsView.swift in Sources */,
+				8B14549B2B0E9D36001AB56D /* CopyrightView.swift in Sources */,
 				8B14547A2B0C0542001AB56D /* LearnView.swift in Sources */,
+				8B1454812B0D4441001AB56D /* LegalView.swift in Sources */,
+				8B1454982B0E9879001AB56D /* RectangleCard.swift in Sources */,
 				8B14546C2B0BF75C001AB56D /* CompSci_Ethics_App.swift in Sources */,
+				8B1454832B0D444F001AB56D /* IntellectualPropertyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

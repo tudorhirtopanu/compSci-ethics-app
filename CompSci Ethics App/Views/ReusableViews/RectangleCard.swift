@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct RectangleCard: View {
+    
+    var color:Color
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        Rectangle()
+            .foregroundColor(color)
+            .clipShape(.rect(cornerSize: CGSize(width: 10, height: 10)))
+            .shadow(radius: 3)
+        
     }
 }
 
 #Preview {
-    RectangleCard()
+    RectangleCard(color: .blue)
+        .padding()
 }
