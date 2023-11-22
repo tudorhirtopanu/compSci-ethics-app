@@ -22,7 +22,6 @@ struct RootView: View {
                     }
             }
         }
-        .environmentObject(IntellectualPropertyManager())
     }
 }
 
