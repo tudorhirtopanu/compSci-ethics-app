@@ -2,18 +2,20 @@
     {
         "id":0,
         "title":"Intellectual Property",
-        "definition":"intangible property created by an individual or organisation",
+        "definition":"Intangible property created by an individual or organisation",
         "examples":[
-            "Names of your products or brands",
+            "Product names/brands",
             "Inventions",
-            "Design or look of your products",
-            "Things you write make or produce"
+            "Design or look of products",
+            "Things you write, make or produce"
         ],
+        "purposeTitle":"Why Protect Intellectual Property?",
         "purpose":[
-            "Protects the creator from others profiting from their hard work without their consent.",
-            "Makes it easier to take legal action against anyone who steals or copies it, with an aim of making a profit.",
+            "Protects creators from others profiting from their hard work without consent.",
+            "Makes it easier to take legal action against anyone who steals/copies it, with an aim of making a profit.",
             "The type of protection you can get depends on your creation"
         ],
+        "protectionDescription":"When choosing to protect intellectual property, you have two main methods of doing so.",
         "protectionOverview":[
             {
                 "id":0,
@@ -33,11 +35,7 @@
                 "protects":[
                     "Inventions & Products"
                 ],
-                "examples":[
-                    "Machines and machine parts",
-                    "Tools",
-                    "Medicine"
-                ]
+                "examples":"Machine parts, tools and medicine",
             }
         ],
         "typesOfProtection":[
@@ -45,6 +43,10 @@
                 "id":0,
                 "name":"Copyright"
             }
-        ]
+        ],
+        "copyright":{
+            "id":0,
+            "title":"Copyright"
+        }
     }
 ]
