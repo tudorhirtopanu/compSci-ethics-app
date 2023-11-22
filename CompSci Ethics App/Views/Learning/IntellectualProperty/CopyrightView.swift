@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct CopyrightView: View {
+    
+    @EnvironmentObject var ipm:IntellectualPropertyManager
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack(alignment: .leading){
+                if let data = ipm.intellectualPropertyData.first?.copyright {
+                    
+                    Text(data.title)
+                    
+                }
+            }
+        }
     }
 }
 
 #Preview {
     CopyrightView()
+        .environmentObject(IntellectualPropertyManager())
 }
