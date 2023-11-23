@@ -114,6 +114,9 @@ struct IntellectualPropertyView: View {
             case .copyright:
                 CopyrightView()
                     .environmentObject(ipm)
+            case .patents:
+                PatentsView()
+                    .environmentObject(ipm)
             }
         }
     }
