@@ -18,6 +18,7 @@ class IntellectualPropertyData: Identifiable, Decodable {
     var protectionOverview:[ProtectionOverview]
     var typesOfProtection:[TypesOfProtection]
     var copyright:Copyright
+    var patents:Patents
 }
 
 class ProtectionOverview: Identifiable, Decodable {
@@ -35,4 +36,19 @@ class TypesOfProtection: Identifiable, Decodable {
 class Copyright: Identifiable, Decodable {
     var id:Int
     var title:String
+    var description:String
+    var covers:[String]
+    var copyrightFact:String
+    var copyrightFactExamples:[String]
+    var license:String
+    var softwareLimitation:String
+}
+
+class Patents: Identifiable, Decodable {
+    var id:Int
+    var title:String
+    var definition:String
+    var patentFacts:[String]
+    var boundaries:String
+    var boundaryExample:[String]
 }
