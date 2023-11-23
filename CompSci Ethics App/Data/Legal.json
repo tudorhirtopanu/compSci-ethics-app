@@ -6,7 +6,7 @@
             "id":0,
             "chapter":"Chapter 1",
             "title":"Computer Software Crime",
-            "software crimes":[
+            "softwareCrimeTypes":[
                 {
                     "id":0,
                     "name":"Theft",
@@ -61,7 +61,7 @@
             "chapter":"Chapter 2",
             "description":"Made it illegal to (attempt to) make unauthorised access or changes to computer material",
             "origin":"A direct response to a case in which two hackers were prosecuted for gaining unauthorised access (in 1984/5) to BT’s Prestel personal message service",
-            "sections":[
+            "actSections":[
                 {
                     "id":0,
                     "title":"Section One",
@@ -160,7 +160,7 @@
                 "It specifies how businesses and public sector organisations can handle the information of their customers.",
                 "It gives more rights and control over their information."
             ],
-            "applications":{
+            "gdprApplications":{
                 "id":0,
                 "title":"Who Does the GDPR Apply To?",
                 "shortDescr":"The GDPR applies to processing carried out by organisations that operate: ",
@@ -176,7 +176,7 @@
                 ]
             },
             "subTitle":"What information does the GDPR apply to?",
-            "informationAppliedTo":[
+            "gdprAppliesTo":[
                 {
                     "id":0,
                     "name":"Personal Data",
@@ -226,7 +226,7 @@
                 "Loss of IP / competitive advantage"
             ],
             "riskResponsibility":"As an IT professional you are likely to have responsibilities around preventing some or all of these kinds of risks",
-            "BCSLink":[
+            "bcsLink":[
                 {
                     "id":0,
                     "codeName":"Public Interest",
@@ -243,7 +243,7 @@
                     "explanation":"requires you to maintain confidentiality"
                 }
             ],
-            "DPALink":{
+            "dpaLink":{
                 "id":0,
                 "name":"7th Principle",
                 "description":"Appropriate technical and organisational measures shall be taken against unauthorised or unlawful processing of personal data and against accidental loss or destruction of, or damage to, personal data.",
