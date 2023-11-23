@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct LegalView: View {
+    
+    @StateObject var legalManager = LegalManager()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            if let data = legalManager.legalData.first{
+                Text(data.title)
+            }
+        }
     }
 }
 

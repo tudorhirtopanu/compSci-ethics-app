@@ -12,7 +12,8 @@ class IntellectualPropertyManager: ObservableObject {
     @Published var intellectualPropertyData = [IntellectualPropertyData]()
     
     init(){
-        self.intellectualPropertyData = DataService.getLocalData()
+        //self.intellectualPropertyData = DataService.getLocalData()
+        self.intellectualPropertyData = DataService.getLocalData(fileName: "IntellectualProperty", fileType: "json", objectType: IntellectualPropertyData.self)
     }
     
 }

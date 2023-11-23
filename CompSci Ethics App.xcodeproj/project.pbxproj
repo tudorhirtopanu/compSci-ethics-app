@@ -30,6 +30,7 @@
 		8BDA61762B0F7D7900962DFE /* IPBasics2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8BDA61752B0F7D7900962DFE /* IPBasics2.mov */; };
 		8BDA61782B0F7FCC00962DFE /* Legal.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BDA61772B0F7FCC00962DFE /* Legal.json */; };
 		8BDA617A2B0FB06D00962DFE /* LegalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA61792B0FB06D00962DFE /* LegalData.swift */; };
+		8BDA617C2B0FDDD800962DFE /* LegalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA617B2B0FDDD800962DFE /* LegalManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		8BDA61752B0F7D7900962DFE /* IPBasics2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IPBasics2.mov; sourceTree = "<group>"; };
 		8BDA61772B0F7FCC00962DFE /* Legal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Legal.json; sourceTree = "<group>"; };
 		8BDA61792B0FB06D00962DFE /* LegalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalData.swift; sourceTree = "<group>"; };
+		8BDA617B2B0FDDD800962DFE /* LegalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				8B14547E2B0D429F001AB56D /* EthicsView.swift */,
-				8B1454802B0D4441001AB56D /* LegalView.swift */,
+				8BDA617D2B0FE73200962DFE /* Legal */,
 				8B1454992B0E9C4F001AB56D /* IntellectualProperty */,
 			);
 			path = Learning;
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				8B1454902B0D55C3001AB56D /* IntellectualPropertyManager.swift */,
+				8BDA617B2B0FDDD800962DFE /* LegalManager.swift */,
 				8BDA61732B0F762B00962DFE /* NavigationManager.swift */,
 			);
 			path = ViewModels;
@@ -194,6 +197,14 @@
 				8B14549C2B0F4DD0001AB56D /* PatentsView.swift */,
 			);
 			path = IntellectualProperty;
+			sourceTree = "<group>";
+		};
+		8BDA617D2B0FE73200962DFE /* Legal */ = {
+			isa = PBXGroup;
+			children = (
+				8B1454802B0D4441001AB56D /* LegalView.swift */,
+			);
+			path = Legal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +296,7 @@
 				8BDA61742B0F762B00962DFE /* NavigationManager.swift in Sources */,
 				8B14549D2B0F4DD0001AB56D /* PatentsView.swift in Sources */,
 				8B1454982B0E9879001AB56D /* RectangleCard.swift in Sources */,
+				8BDA617C2B0FDDD800962DFE /* LegalManager.swift in Sources */,
 				8B14546C2B0BF75C001AB56D /* CompSci_Ethics_App.swift in Sources */,
 				8B1454832B0D444F001AB56D /* IntellectualPropertyView.swift in Sources */,
 			);
