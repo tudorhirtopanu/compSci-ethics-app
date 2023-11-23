@@ -53,4 +53,36 @@ class DataService {
         return [IntellectualPropertyData]()
     }
     
+    static func getLocalData<T: Decodable>(fileName: String, fileType: String, objectType: T.Type) -> [T] {
+            // Parse local JSON file
+            
+            // Get a URL path to the JSON file
+            if let pathString = Bundle.main.path(forResource: fileName, ofType: fileType) {
+                // Create a URL object
+                let url = URL(fileURLWithPath: pathString)
+                
+                do {
+                    // Create a data object
+                    let data = try Data(contentsOf: url)
+                    
+                    // Decode the data with a JSON decoder
+                    let decoder = JSONDecoder()
+                    
+                    do {
+                        let jsonData = try decoder.decode([T].self, from: data)
+                        // Return the decoded data
+                        return jsonData
+                    } catch {
+                        // Error with parsing JSON
+                        print(error)
+                    }
+                } catch {
+                    // Error with getting data
+                    print(error)
+                }
+            }
+            
+            return [T]()
+        }
+    
 }
