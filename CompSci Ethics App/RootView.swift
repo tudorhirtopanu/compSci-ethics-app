@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct RootView: View {
+    
+    @StateObject var navigationManager = NavigationManager()
+    
     var body: some View {
-        NavigationStack {
+        NavigationStack(path:$navigationManager.path) {
             TabView {
                 LearnView()
+                    .environmentObject(navigationManager)
                     .tabItem {
                         Label("Learn", systemImage: "book.fill")
                     }
                 
                 QuizView()
+                    .environmentObject(navigationManager)
                     .tabItem {
                         Label("Quiz", systemImage: "graduationcap.fill")
                     }

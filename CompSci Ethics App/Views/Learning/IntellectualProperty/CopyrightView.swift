@@ -11,6 +11,7 @@ import AVKit
 struct CopyrightView: View {
     
     @EnvironmentObject var ipm:IntellectualPropertyManager
+    @EnvironmentObject var navigationManager:NavigationManager
     
     let videoRatio: CGFloat = 1080/1920
     

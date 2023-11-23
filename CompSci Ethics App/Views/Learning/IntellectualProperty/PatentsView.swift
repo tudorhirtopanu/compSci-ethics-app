@@ -11,6 +11,7 @@ import AVKit
 struct PatentsView: View {
     
     @EnvironmentObject var ipm:IntellectualPropertyManager
+    @EnvironmentObject var navigationManager:NavigationManager
     
     let videoRatio: CGFloat = 1080/1920
     
@@ -60,7 +61,9 @@ struct PatentsView: View {
                             }
                         }
                         
-                        NavigationLink(value: IntellectualPropertyChapters.patents, label: {
+                        Button(action: {
+                            navigationManager.popToRoot()
+                        }, label: {
                             ZStack {
                                 RectangleCard(color: .blue)
                                     .frame(height: 40)
@@ -84,4 +87,5 @@ struct PatentsView: View {
 #Preview {
     PatentsView()
         .environmentObject(IntellectualPropertyManager())
+        .environmentObject(NavigationManager())
 }

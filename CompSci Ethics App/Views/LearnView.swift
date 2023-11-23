@@ -20,20 +20,45 @@ enum IntellectualPropertyChapters {
 }
 
 struct LearnView: View {
+    
+    @EnvironmentObject var navigationManager:NavigationManager
+    
     var body: some View {
         VStack{
+
+                NavigationLink(value: LearningDestinations.ethics, label: {
+                    ZStack{
+                        RectangleCard(color: .cyan)
+                            .frame(height: 60)
+                        Text("Ethics")
+                            .font(.title)
+                            .fontWeight(.medium)
+                            .foregroundStyle(Color.white)
+                    }
+                })
+                
+                NavigationLink(value: LearningDestinations.legal, label: {
+                    ZStack{
+                        RectangleCard(color: .indigo)
+                            .frame(height: 60)
+                        Text("Legal Issues")
+                            .font(.title)
+                            .fontWeight(.medium)
+                            .foregroundStyle(Color.white)
+                    }
+                })
             
-            NavigationLink(value: LearningDestinations.ethics, label: {
-                Text("Ethics")
-            })
-            
-            NavigationLink(value: LearningDestinations.legal, label: {
-                Text("Legal Issues")
-            })
-            
-            NavigationLink(value: LearningDestinations.intellectualProperty, label: {
-                Text("Intellectual Property")
-            })
+
+                NavigationLink(value: LearningDestinations.intellectualProperty, label: {
+                    ZStack{
+                        RectangleCard(color: .blue)
+                            .frame(height: 60)
+                        Text("Ethics")
+                            .font(.title)
+                            .fontWeight(.medium)
+                            .foregroundStyle(Color.white)
+                    }
+                })
             
             .navigationDestination(for: LearningDestinations.self) { state in
                 switch state {
@@ -44,6 +69,7 @@ struct LearnView: View {
                     LegalView()
                 case .intellectualProperty:
                     IntellectualPropertyView()
+                        .environmentObject(navigationManager)
                     
                 }
             }
@@ -51,9 +77,12 @@ struct LearnView: View {
             
             
         }
+        .padding(.horizontal)
     }
 }
 
 #Preview {
-    LearnView()
+    NavigationStack {
+        LearnView()
+    }
 }

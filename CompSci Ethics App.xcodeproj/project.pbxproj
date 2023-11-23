@@ -26,6 +26,9 @@
 		8B14549D2B0F4DD0001AB56D /* PatentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B14549C2B0F4DD0001AB56D /* PatentsView.swift */; };
 		8B14549F2B0F4F41001AB56D /* Copyright.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8B14549E2B0F4F41001AB56D /* Copyright.mp4 */; };
 		8B1454A32B0F54B2001AB56D /* Patents.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8B1454A22B0F54B2001AB56D /* Patents.mp4 */; };
+		8BDA61742B0F762B00962DFE /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA61732B0F762B00962DFE /* NavigationManager.swift */; };
+		8BDA61762B0F7D7900962DFE /* IPBasics2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8BDA61752B0F7D7900962DFE /* IPBasics2.mov */; };
+		8BDA61782B0F7FCC00962DFE /* Legal.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BDA61772B0F7FCC00962DFE /* Legal.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		8B14549C2B0F4DD0001AB56D /* PatentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentsView.swift; sourceTree = "<group>"; };
 		8B14549E2B0F4F41001AB56D /* Copyright.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Copyright.mp4; sourceTree = "<group>"; };
 		8B1454A22B0F54B2001AB56D /* Patents.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Patents.mp4; sourceTree = "<group>"; };
+		8BDA61732B0F762B00962DFE /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		8BDA61752B0F7D7900962DFE /* IPBasics2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IPBasics2.mov; sourceTree = "<group>"; };
+		8BDA61772B0F7FCC00962DFE /* Legal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Legal.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				8B1454852B0D4490001AB56D /* IntellectualProperty.json */,
+				8BDA61772B0F7FCC00962DFE /* Legal.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -144,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				8B1454902B0D55C3001AB56D /* IntellectualPropertyManager.swift */,
+				8BDA61732B0F762B00962DFE /* NavigationManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 				8B14548B2B0D4DEB001AB56D /* IPBasics.mp4 */,
 				8B14549E2B0F4F41001AB56D /* Copyright.mp4 */,
 				8B1454A22B0F54B2001AB56D /* Patents.mp4 */,
+				8BDA61752B0F7D7900962DFE /* IPBasics2.mov */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -246,8 +255,10 @@
 				8B1454732B0BF75E001AB56D /* Preview Assets.xcassets in Resources */,
 				8B1454702B0BF75E001AB56D /* Assets.xcassets in Resources */,
 				8B1454862B0D4490001AB56D /* IntellectualProperty.json in Resources */,
+				8BDA61762B0F7D7900962DFE /* IPBasics2.mov in Resources */,
 				8B14548C2B0D4DEB001AB56D /* IPBasics.mp4 in Resources */,
 				8B1454A32B0F54B2001AB56D /* Patents.mp4 in Resources */,
+				8BDA61782B0F7FCC00962DFE /* Legal.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +278,7 @@
 				8B14549B2B0E9D36001AB56D /* CopyrightView.swift in Sources */,
 				8B14547A2B0C0542001AB56D /* LearnView.swift in Sources */,
 				8B1454812B0D4441001AB56D /* LegalView.swift in Sources */,
+				8BDA61742B0F762B00962DFE /* NavigationManager.swift in Sources */,
 				8B14549D2B0F4DD0001AB56D /* PatentsView.swift in Sources */,
 				8B1454982B0E9879001AB56D /* RectangleCard.swift in Sources */,
 				8B14546C2B0BF75C001AB56D /* CompSci_Ethics_App.swift in Sources */,
