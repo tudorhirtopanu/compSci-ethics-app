@@ -46,7 +46,34 @@
         ],
         "copyright":{
             "id":0,
-            "title":"Copyright"
+            "title":"Copyright",
+            "description":"Comes into effect automatically - protects the expression or manifestation of an idea (not the idea itself).",
+            "covers":[
+                "Traditional documents like books, music articles, movies/TV",
+                "Computer software, databases, designs and multimedia"
+            ],
+            "copyrightFact":"Copyright (UK) normally extends beyond the author’s lifetime. However there are some exceptions: ",
+            "copyrightFactExamples":[
+                "Sound records and broadcasts – 50 years",
+                "Published editions (typographical arrangement) – 25 years"
+            ],
+            "license":"Authors may license others to produce copies, often in return for royalties",
+            "softwareLimitation":"Whilst software is automatically copyright, this does not prevent others from writing their own code to implement the same ideas (reverse engineering)"
+        },
+        "patents":{
+            "id":0,
+            "title":"Patents",
+            "definition":"A patent protects your invention and lets you take legal action against anyone who makes, uses, or sells your invention without your permission",
+            "patentFacts":[
+                "Protects the idea behind an invention",
+                "The ideas should be original and not obvious (A new, useful and inventive step)",
+                "Patents  are published, thus benefiting public knowledge"
+            ],
+            "boundaries":"There are clear boundaries defining what can be patented",
+            "boundaryExample":[
+                "Software is not (usually) patentable",
+                "Artistic creations, mathematical models, plans, schemes or other purely mental processes cannot be patented"
+            ]
         }
     }
 ]
