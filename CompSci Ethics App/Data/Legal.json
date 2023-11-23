@@ -1,0 +1,393 @@
+[
+    {
+        "id":0,
+        "title":"Legal Issues",
+        "softwareCrimes":{
+            "id":0,
+            "chapter":"Chapter 1",
+            "title":"Computer Software Crime",
+            "software crimes":[
+                {
+                    "id":0,
+                    "name":"Theft",
+                    "definition":["Stealing data and software"]
+                },
+                {
+                    "id":1,
+                    "name":"Hacking",
+                    "definition":[
+                        "Any action that results in unauthorised access to a system with the aim of causing damage or data theft",
+                        "Write/use ready-made programs to break into a computer with intent to steal, damage, modify or monitor data within the system"
+                    ]
+                },
+                {
+                    "id":2,
+                    "name":"Spamming",
+                    "definition":[
+                        "unsolicited emailing; can disrupt or disable networks"
+                    ]
+                },
+                {
+                    "id":3,
+                    "name":"Denial of Service Attack",
+                    "definition":[
+                        "an attempt to make a machine or network resource unavailable to its intended users"
+                    ]
+                },
+                {
+                    "id":4,
+                    "name":"Sniffing",
+                    "definition":[
+                        "electronic eavesdropping on electronic data transmissions; encryption vital to ensure security (e.g. HTTPS)"
+                    ]
+                },
+                {
+                    "id":5,
+                    "name":"Identity Theft",
+                    "definition":[
+                        "The fraudulent acquisition and use of person’s private identifying information, usually for financial gain"
+                    ],
+                    "examples":[
+                        "Phishing – fake (albeit credible) requests for confidential data",
+                        "Skimming – details are stolen from magnetic strip or RF tag of a card",
+                        "Shoulder surfing – direct observation of details e.g. being entered/displayed"
+                    ]
+                }
+            ]
+        },
+        "compMisuseAct":{
+            "id":0,
+            "title":"Computer Misuse Act (1990)",
+            "chapter":"Chapter 2",
+            "description":"Made it illegal to (attempt to) make unauthorised access or changes to computer material",
+            "origin":"A direct response to a case in which two hackers were prosecuted for gaining unauthorised access (in 1984/5) to BT’s Prestel personal message service",
+            "sections":[
+                {
+                    "id":0,
+                    "title":"Section One",
+                    "description": "Unauthorised access to computer material",
+                    "explanation": "The basic offence of hacking (including failed attempts)"
+                },
+                {
+                    "id":1,
+                    "title":"Section Two",
+                    "description": "Unauthorised access with intent to commit or facilitate commission of further offences",
+                    "explanation": "When the hacking leads to another offence (e.g. theft)"
+                },
+                {
+                    "id":2,
+                    "title":"Section Three",
+                    "description": "Unauthorised modification of computer material",
+                    "explanation": "covers the use viruses, worms; also phishing and skimming"
+                }
+            ]
+        },
+        "compMisuseActAmendments":{
+            "id":0,
+            "title":"Amendments to CMA",
+            "chapter":"Chapter 2.1",
+            "description":"Sections 35 to 38 of Police and Justice Act (2006) contains some amendments",
+            "amendmentTitle":"Section 3 Offence Amendment",
+            "amendmentDescription":[
+                "Section 3 offence is now defined as: Unauthorised acts with intent to impair, or with recklessness as to impairing, operation of computer, etc",
+                "Section 3A states that it is an offence to: supply or offer to supply any article believing that is it likely to be used to commit, or to assist in the commission of, an offence",
+                "Additionally, smart phones are redefined as 'computers' under the Act"
+            ]
+        },
+        "privacy":{
+            "id":0,
+            "title":"Privacy",
+            "chapter":"Chapter 3",
+            "definition":"the ability of an individual/group to stop data/information about themselves from becoming known to people other than whom they choose to give access",
+            "privacyTemp":"It is increasingly tempting to use peoples’ data for purposes other than that for which it was originally collected (and therefore consented)",
+            "dataIssues":[
+                "Data can be sold on to third parties",
+                "Data can be combined from different sources to build a profile of greater complexity than that originally visualized",
+                "Data might be inaccurate, or become so over time"
+            ],
+            "solution":"To counter these and other issues, the UK introduced the Data Protection Act (1994, 1998)"
+        },
+        "dataProtectionLegislation":{
+            "id":0,
+            "title":"Data Protection Legislation",
+            "chapter":"Chapter 3.1",
+            "description":[
+                "The original act was first introduced in 1994",
+                "In 1995 the European Union (EU) approved the Directive on Data Protection (1995)",
+                "This led to key updates to the 1994 act concerning the obtaining and disclosing of data (in addition to data processing), forming the 1998 act",
+                "This act came into force on 1st March 2000"
+            ]
+        },
+        "dpa1998":{
+            "id":0,
+            "title":" The Data Protection Act 1998",
+            "chapter":"Chapter 3.2",
+            "description":"This act contains 8 key principles which have been edited for brevity",
+            "keyPrinciples":[
+                "Personal data should be processed fairly and lawfully and only if necessary",
+                "Personal data shall be obtained for one or more specified purposes, and not processed further for other purposes",
+                "Personal data should be adequate, relevant and not excessive",
+                "Personal data should be accurate and kept up to date",
+                "Personal data should not be kept for longer than is necessary for the original purpose",
+                "Personal data shall be processed in accordance with the rights of data subjects under this Act",
+                "Appropriate technical and organisational measures shall be taken against unlawful processing, accidental loss, destruction or damage of personal data",
+                "Personal data should not be transferred to a country outside of the EU unless they ensure an adequate level of protection for the rights and freedoms of data subjects in relation to the processing of personal data"
+
+            ],
+            "dpaAppliesToDataHeldOn":[
+                "On computers or in computer-readable format",
+                "Manually (if in structured form)"
+            ],
+            "dataStoringExamples":[
+                "Medical and educational records"
+            ],
+            "subjectRights1994":"Under the 1994 Act, Data Subjects had the basic right to know what data was held about them",
+            "subjectRights1998":[
+                "makes our data protection laws fit for the digital age in which an ever-increasing amount of data is being processed",
+                "empowers people to take control of their data",
+                "supports UK businesses and organisations through the change",
+                "ensures that the UK is prepared for the future after we have left the EU"
+
+            ]
+        },
+        "gdpr":{
+            "id":0,
+            "title":"General Data Protection Regulation (GDPR)",
+            "chapter":"Chapter 3.3",
+            "description":[
+                "The GDPR is a regulation in the EU law on data protection and privacy for all individuals within the EU and the European Economic Area.",
+                "It came into action on 25 May 2018.",
+                "It specifies how businesses and public sector organisations can handle the information of their customers.",
+                "It gives more rights and control over their information."
+            ],
+            "applications":{
+                "id":0,
+                "title":"Who Does the GDPR Apply To?",
+                "shortDescr":"The GDPR applies to processing carried out by organisations that operate: ",
+                "appliesTo":[
+                    "within the EU",
+                    "outside the EU that offer goods or services to individuals in the EU."
+                ],
+                "secondShortDescr":"The GDPR does not apply to: ",
+                "doesntApplyTo":[
+                    "certain activities including processing covered by the Law Enforcement Directive;",
+                    "processing for national security purposes;",
+                    "processing carried out by individuals purely for personal/household activities."
+                ]
+            },
+            "subTitle":"What information does the GDPR apply to?",
+            "informationAppliedTo":[
+                {
+                    "id":0,
+                    "name":"Personal Data",
+                    "examples":[
+                        "any information relating to an identifiable person who can be directly or indirectly identified in particular by reference to an identifier.",
+                        "applies to both automated personal data and to manual filing systems where personal data are accessible according to specific criteria"
+                    ]
+                },
+                {
+                    "id":1,
+                    "name":"Sensitive Personal Data",
+                    "examples":[
+                        "Racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership;",
+                        "Genetic data, biometric data for the purpose of uniquely identifying a natural person.",
+                        "Data concerning health or data concerning a natural person's sex life or sexual orientation."
+                    ]
+                }
+            ],
+            "exceptions":"Personal data relating to criminal convictions and offences are not included.",
+            "subTitle2":"GDPR Principles related to personal data",
+            "personalDataPrinciples":[
+                "processed lawfully, fairly and in a transparent manner in relation to individuals;",
+                "collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes;",
+                "adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed;",
+                "accurate and, where necessary, kept up to date;",
+                "kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed.",
+                "processed in a manner that ensures appropriate security of the personal data."
+            ]
+        },
+        "dataSecurity":{
+            "id":0,
+            "title":"Data Security",
+            "chapter":"Chapter 4",
+            "definition": "The mechanisms that protect the data against intentional or accidental threats",
+            "breachExamples":[
+                "Theft and fraud",
+                "Loss of confidentiality – rights of organisation to secrecy",
+                "Loss of privacy – rights of control over personal data",
+                "Loss of integrity – damage or loss of data",
+                "Loss of availability – system down-time"
+            ],
+            "breachImpacts":[
+                "Lost revenue",
+                "Unexpected repair costs",
+                "Damaged reputation",
+                "Legal liability",
+                "Loss of IP / competitive advantage"
+            ],
+            "riskResponsibility":"As an IT professional you are likely to have responsibilities around preventing some or all of these kinds of risks",
+            "BCSLink":[
+                {
+                    "id":0,
+                    "codeName":"Public Interest",
+                    "explanation":"refers to privacy"
+                },
+                {
+                    "id":1,
+                    "codeName":"Professional competence and integrity",
+                    "explanation":"refers to the need to keep up with technological developments and relevant legislation"
+                },
+                {
+                    "id":2,
+                    "codeName":"Duty to relevant authority ",
+                    "explanation":"requires you to maintain confidentiality"
+                }
+            ],
+            "DPALink":{
+                "id":0,
+                "name":"7th Principle",
+                "description":"Appropriate technical and organisational measures shall be taken against unauthorised or unlawful processing of personal data and against accidental loss or destruction of, or damage to, personal data.",
+                "importantNote":"If you give someone’s data away, and you could have prevented it, you’re potentially in breach of the Act"
+            }
+        },
+        "securityThreats":{
+            "id":0,
+            "title":"Threats to Security",
+            "chapter":"Chapter 4.1",
+            "threats":[
+                {
+                    "id":0,
+                    "name":"Hardware",
+                    "examples":[
+                        "Fire/flood/bombs",
+                        "Data corruption due to power loss or surge",
+                        "Failure of security mechanisms",
+                        "giving greater access",
+                        "Theft of equipment",
+                        "Physical damage to equipment",
+                        "Electronic interference and radiation"
+                    ]
+                },
+                {
+                    "id":1,
+                    "name":"Users",
+                    "examples":[
+                        "Using another person's means of access",
+                        "Viewing and disclosing unauthorized data",
+                        "Inadequate staff training",
+                        "Illegal entry by hacker",
+                        "Blackmail",
+                        "Introduction of viruses"
+                    ]
+                },
+                {
+                    "id":2,
+                    "name":"Communication networks ",
+                    "examples":[
+                        "Wire tapping",
+                        "Breaking or disconnection of cables",
+                        "Electronic interference and radiation"
+                    ]
+                },
+                {
+                    "id":3,
+                    "name":"Programmers/operators",
+                    "examples":[
+                        "Creating trapdoors",
+                        "Program alteration (such as creating software that is insecure)",
+                        "Inadequate staff training",
+                        "Inadequate security policies and procedures",
+                        "Staff shortages or strikes"
+                    ]
+                },
+                {
+                    "id":4,
+                    "name":"Data/database administrator",
+                    "examples":[
+                        "Inadequate security policies and procedures"
+                    ]
+                },
+                {
+                    "id":5,
+                    "name":"Database",
+                    "examples":[
+                        "Unauthorized amendment or copying of data",
+                        "Theft of data",
+                        "Data corruption due to power loss or surge"
+                    ]
+                },
+                {
+                    "id":6,
+                    "name":"DBMS and application software",
+                    "examples":[
+                        "Failure of security mechanism giving greater access",
+                        "Program alteration",
+                        "Theft of programs"
+                    ]
+                }
+            ]
+        },
+        "reducingRisks":{
+            "id":0,
+            "title":"Reducing Security Risks",
+            "chapter":"Chapter 4.2",
+            "riskReduction":[
+                {
+                    "id":0,
+                    "name":"Authorisation",
+                    "description":[
+                        "Access controls govern not only access to data but how it can be used",
+                        "Access determined by authentication process (e.g. user name and password)",
+                        "User access controlled by the system administrator",
+                        "Privileges specify which objects (e.g. folders/files, DB tables) a user needs to read/modify in order to do their job",
+                        "Granting of unnecessary privileges should be avoided"
+
+                    ]
+                },
+                {
+                    "id":1,
+                    "name":"Backup and recovery",
+                    "description":[
+                        "Making regular copies data and (in DB system) the log-file (transaction history) that contains information about all updates to the database.",
+                        "Backup window: The time during which the backup can occur",
+                        "Full back-ups are time/space consuming are often done periodically with incremental or differential back-ups"
+                    ],
+                    "extraInfo":[
+                        "backing up volatile data during busy periods can cause integrity problems.",
+                        "If possible scheduled out of normal operating hours"
+                    ]
+                },
+                {
+                    "id":2,
+                    "name":"Encryption",
+                    "description":[
+                        "Use of an algorithm that encodes data using an encryption key, whereby data can only be decoded (made readable) with the decryption key",
+                        "Brute force methods can ‘crack’ 64-bit encryption key quite quickly. 128-bit or longer keys should be more reliable for the foreseeable future"
+                    ]
+                },
+                {
+                    "id":3,
+                    "name":"Firewalls",
+                    "description":[
+                        "Server/router based software that controls external access to the local network"
+                    ]
+                }
+            ]
+        },
+        "risksSummary":{
+            "id":0,
+            "title":"Stay Secure Summary",
+            "chapter":"Chapter 4.3",
+            "description":"In conclusion, in order to stay safe and secure your digital world, you should: ",
+            "stepsToSecure":[
+                "Install a firewall and anti-virus software",
+                "Install anti spy/malware tools",
+                "Install updates",
+                "Choose strong passwords and don’t share",
+                "Encrypt sensitive data",
+                "Make regular data back-ups",
+                "Wipe all data before disposal/resale"
+            ]
+        }
+    }
+]
