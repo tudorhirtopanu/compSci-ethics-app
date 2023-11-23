@@ -16,6 +16,7 @@ enum LearningDestinations {
 enum IntellectualPropertyChapters {
     case introduction
     case copyright
+    case patents
 }
 
 struct LearnView: View {

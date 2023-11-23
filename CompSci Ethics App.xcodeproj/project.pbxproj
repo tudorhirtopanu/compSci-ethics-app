@@ -23,6 +23,9 @@
 		8B1454962B0D5A44001AB56D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1454952B0D5A44001AB56D /* DataService.swift */; };
 		8B1454982B0E9879001AB56D /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1454972B0E9879001AB56D /* RectangleCard.swift */; };
 		8B14549B2B0E9D36001AB56D /* CopyrightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B14549A2B0E9D36001AB56D /* CopyrightView.swift */; };
+		8B14549D2B0F4DD0001AB56D /* PatentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B14549C2B0F4DD0001AB56D /* PatentsView.swift */; };
+		8B14549F2B0F4F41001AB56D /* Copyright.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8B14549E2B0F4F41001AB56D /* Copyright.mp4 */; };
+		8B1454A32B0F54B2001AB56D /* Patents.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8B1454A22B0F54B2001AB56D /* Patents.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		8B1454952B0D5A44001AB56D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		8B1454972B0E9879001AB56D /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		8B14549A2B0E9D36001AB56D /* CopyrightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightView.swift; sourceTree = "<group>"; };
+		8B14549C2B0F4DD0001AB56D /* PatentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatentsView.swift; sourceTree = "<group>"; };
+		8B14549E2B0F4F41001AB56D /* Copyright.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Copyright.mp4; sourceTree = "<group>"; };
+		8B1454A22B0F54B2001AB56D /* Patents.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Patents.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				8B14548B2B0D4DEB001AB56D /* IPBasics.mp4 */,
+				8B14549E2B0F4F41001AB56D /* Copyright.mp4 */,
+				8B1454A22B0F54B2001AB56D /* Patents.mp4 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -171,6 +179,7 @@
 			children = (
 				8B1454822B0D444F001AB56D /* IntellectualPropertyView.swift */,
 				8B14549A2B0E9D36001AB56D /* CopyrightView.swift */,
+				8B14549C2B0F4DD0001AB56D /* PatentsView.swift */,
 			);
 			path = IntellectualProperty;
 			sourceTree = "<group>";
@@ -233,10 +242,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B14549F2B0F4F41001AB56D /* Copyright.mp4 in Resources */,
 				8B1454732B0BF75E001AB56D /* Preview Assets.xcassets in Resources */,
 				8B1454702B0BF75E001AB56D /* Assets.xcassets in Resources */,
 				8B1454862B0D4490001AB56D /* IntellectualProperty.json in Resources */,
 				8B14548C2B0D4DEB001AB56D /* IPBasics.mp4 in Resources */,
+				8B1454A32B0F54B2001AB56D /* Patents.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +267,7 @@
 				8B14549B2B0E9D36001AB56D /* CopyrightView.swift in Sources */,
 				8B14547A2B0C0542001AB56D /* LearnView.swift in Sources */,
 				8B1454812B0D4441001AB56D /* LegalView.swift in Sources */,
+				8B14549D2B0F4DD0001AB56D /* PatentsView.swift in Sources */,
 				8B1454982B0E9879001AB56D /* RectangleCard.swift in Sources */,
 				8B14546C2B0BF75C001AB56D /* CompSci_Ethics_App.swift in Sources */,
 				8B1454832B0D444F001AB56D /* IntellectualPropertyView.swift in Sources */,
@@ -398,8 +410,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -427,8 +438,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
