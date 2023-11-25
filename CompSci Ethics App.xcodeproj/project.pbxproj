@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B0CE9462B128BA3006D3650 /* DataSecurityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0CE9452B128BA3006D3650 /* DataSecurityView.swift */; };
+		8B0CE9482B1290D1006D3650 /* SecurityThreatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0CE9472B1290D1006D3650 /* SecurityThreatsView.swift */; };
+		8B0CE94A2B1292D6006D3650 /* ReducingRisksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0CE9492B1292D6006D3650 /* ReducingRisksView.swift */; };
 		8B14546C2B0BF75C001AB56D /* CompSci_Ethics_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B14546B2B0BF75C001AB56D /* CompSci_Ethics_App.swift */; };
 		8B14546E2B0BF75C001AB56D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B14546D2B0BF75C001AB56D /* RootView.swift */; };
 		8B1454702B0BF75E001AB56D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B14546F2B0BF75E001AB56D /* Assets.xcassets */; };
@@ -40,6 +43,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B0CE9452B128BA3006D3650 /* DataSecurityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSecurityView.swift; sourceTree = "<group>"; };
+		8B0CE9472B1290D1006D3650 /* SecurityThreatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityThreatsView.swift; sourceTree = "<group>"; };
+		8B0CE9492B1292D6006D3650 /* ReducingRisksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducingRisksView.swift; sourceTree = "<group>"; };
 		8B1454682B0BF75C001AB56D /* CompSci Ethics App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CompSci Ethics App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B14546B2B0BF75C001AB56D /* CompSci_Ethics_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompSci_Ethics_App.swift; sourceTree = "<group>"; };
 		8B14546D2B0BF75C001AB56D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -84,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B0CE9442B128B72006D3650 /* Chapter 4 */ = {
+			isa = PBXGroup;
+			children = (
+				8B0CE9452B128BA3006D3650 /* DataSecurityView.swift */,
+				8B0CE9472B1290D1006D3650 /* SecurityThreatsView.swift */,
+				8B0CE9492B1292D6006D3650 /* ReducingRisksView.swift */,
+			);
+			path = "Chapter 4";
+			sourceTree = "<group>";
+		};
 		8B14545F2B0BF75C001AB56D = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +233,7 @@
 				8BDA617E2B0FF43500962DFE /* Chapter 1 */,
 				8BDA617F2B12133000962DFE /* Chapter 2 */,
 				8BDA61862B1215F100962DFE /* Chapter 3 */,
+				8B0CE9442B128B72006D3650 /* Chapter 4 */,
 			);
 			path = Legal;
 			sourceTree = "<group>";
@@ -326,12 +343,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BDA617A2B0FB06D00962DFE /* LegalData.swift in Sources */,
+				8B0CE9462B128BA3006D3650 /* DataSecurityView.swift in Sources */,
 				8BDA61902B121ECC00962DFE /* GDPRView.swift in Sources */,
 				8B1454932B0D5785001AB56D /* IntellectualPropertyData.swift in Sources */,
 				8BDA618C2B121C8900962DFE /* DataProtectionAct.swift in Sources */,
 				8B14546E2B0BF75C001AB56D /* RootView.swift in Sources */,
 				8B1454912B0D55C3001AB56D /* IntellectualPropertyManager.swift in Sources */,
 				8B14547C2B0C054D001AB56D /* QuizView.swift in Sources */,
+				8B0CE94A2B1292D6006D3650 /* ReducingRisksView.swift in Sources */,
 				8BDA61852B1214F400962DFE /* CMAAmendments.swift in Sources */,
 				8B1454962B0D5A44001AB56D /* DataService.swift in Sources */,
 				8B14547F2B0D429F001AB56D /* EthicsView.swift in Sources */,
@@ -342,6 +361,7 @@
 				8B1454812B0D4441001AB56D /* LegalView.swift in Sources */,
 				8BDA61742B0F762B00962DFE /* NavigationManager.swift in Sources */,
 				8B14549D2B0F4DD0001AB56D /* PatentsView.swift in Sources */,
+				8B0CE9482B1290D1006D3650 /* SecurityThreatsView.swift in Sources */,
 				8B1454982B0E9879001AB56D /* RectangleCard.swift in Sources */,
 				8BDA61882B12161000962DFE /* PrivacyView.swift in Sources */,
 				8BDA617C2B0FDDD800962DFE /* LegalManager.swift in Sources */,
