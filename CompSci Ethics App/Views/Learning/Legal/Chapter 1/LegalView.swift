@@ -57,10 +57,36 @@ struct LegalView: View {
                         
                     }
                     
+                    NavigationLink(value: LegalChapters.computerMisuseAct, label: {
+                        ZStack {
+                            RectangleCard(color: .blue)
+                                .frame(height: 40)
+                                .padding(.horizontal, 5)
+                            
+                            Text("Next: Computer Misuse Act (Chapter 2)")
+                                .foregroundStyle(Color.white)
+                        }
+                    })
+                    .padding(.top, 10)
                     
                 }
             }.padding(.horizontal)
         }.scrollIndicators(.hidden)
+            .navigationDestination(for: LegalChapters.self) { state in
+                switch state {
+                case .computerSoftwareCrime:
+                    LegalView()
+                case .computerMisuseAct:
+                    ComputerMisuseAct1990()
+                        .environmentObject(legalManager)
+                case .cmaAmendments:
+                    CMAAmendments()
+                        .environmentObject(legalManager)
+                case .Privacy:
+                    PrivacyView()
+                        .environmentObject(legalManager)
+                }
+            }
     }
 }
 
