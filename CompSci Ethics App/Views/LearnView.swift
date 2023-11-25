@@ -19,6 +19,20 @@ enum IntellectualPropertyChapters {
     case patents
 }
 
+enum LegalChapters {
+    
+    //Chapter 1
+    case computerSoftwareCrime
+    
+    //Chapter 2
+    case computerMisuseAct
+    case cmaAmendments
+    
+    // Chapter 3
+    case Privacy
+   
+}
+
 struct LearnView: View {
     
     @EnvironmentObject var navigationManager:NavigationManager
@@ -53,7 +67,7 @@ struct LearnView: View {
                     ZStack{
                         RectangleCard(color: .blue)
                             .frame(height: 60)
-                        Text("Ethics")
+                        Text("Intellectual Property")
                             .font(.title)
                             .fontWeight(.medium)
                             .foregroundStyle(Color.white)
