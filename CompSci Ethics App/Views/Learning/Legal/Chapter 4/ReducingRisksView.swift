@@ -54,6 +54,18 @@ struct ReducingRisksView: View {
                         
                     }
                     
+                    NavigationLink(value: LegalChapters.staySafe, label: {
+                        ZStack {
+                            RectangleCard(color: .blue)
+                                .frame(height: 40)
+                                .padding(.horizontal, 5)
+                            
+                            Text("Next: Staying Safe (Chapter 4.3)")
+                                .foregroundStyle(Color.white)
+                        }
+                    })
+                    .padding(.top, 10)
+                    
                 }
             }
             .padding(.horizontal)

@@ -37,7 +37,7 @@ struct CMAAmendments: View {
                             .padding(.bottom, 2)
                     }
                     
-                    NavigationLink(value: LegalChapters.Privacy, label: {
+                    NavigationLink(value: LegalChapters.privacy, label: {
                         ZStack {
                             RectangleCard(color: .blue)
                                 .frame(height: 40)

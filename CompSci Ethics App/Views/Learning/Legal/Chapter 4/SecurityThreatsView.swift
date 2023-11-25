@@ -48,6 +48,18 @@ struct SecurityThreatsView: View {
                         
                     }
                     
+                    NavigationLink(value: LegalChapters.reducingRisks, label: {
+                        ZStack {
+                            RectangleCard(color: .blue)
+                                .frame(height: 40)
+                                .padding(.horizontal, 5)
+                            
+                            Text("Next: Reducing Risks (Chapter 4.2)")
+                                .foregroundStyle(Color.white)
+                        }
+                    })
+                    .padding(.top, 10)
+                    
                 }
             }.padding(.horizontal)
         }.scrollIndicators(.hidden)

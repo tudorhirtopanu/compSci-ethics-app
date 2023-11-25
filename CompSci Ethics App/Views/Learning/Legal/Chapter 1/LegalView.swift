@@ -11,6 +11,8 @@ struct LegalView: View {
     
     @StateObject var legalManager = LegalManager()
     
+    @EnvironmentObject var navigationManager:NavigationManager
+    
     var body: some View {
         ScrollView {
             VStack(alignment:.leading){
@@ -82,9 +84,31 @@ struct LegalView: View {
                 case .cmaAmendments:
                     CMAAmendments()
                         .environmentObject(legalManager)
-                case .Privacy:
+                case .privacy:
                     PrivacyView()
                         .environmentObject(legalManager)
+                case .dpaLegislation:
+                    DPALegislation()
+                        .environmentObject(legalManager)
+                case .dpa:
+                    DataProtectionAct()
+                        .environmentObject(legalManager)
+                case .gdpr:
+                    GDPRView()
+                        .environmentObject(legalManager)
+                case .dataSecurity:
+                    DataSecurityView()
+                        .environmentObject(legalManager)
+                case .securityThreats:
+                    SecurityThreatsView()
+                        .environmentObject(legalManager)
+                case .reducingRisks:
+                    ReducingRisksView()
+                        .environmentObject(legalManager)
+                case .staySafe:
+                    StaySafeView()
+                        .environmentObject(legalManager)
+                        .environmentObject(navigationManager)
                 }
             }
     }
@@ -92,4 +116,5 @@ struct LegalView: View {
 
 #Preview {
     LegalView()
+        .environmentObject(NavigationManager())
 }

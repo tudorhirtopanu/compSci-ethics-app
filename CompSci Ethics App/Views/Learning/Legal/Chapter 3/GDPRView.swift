@@ -105,6 +105,18 @@ struct GDPRView: View {
                         
                     }
                     
+                    NavigationLink(value: LegalChapters.dataSecurity, label: {
+                        ZStack {
+                            RectangleCard(color: .blue)
+                                .frame(height: 40)
+                                .padding(.horizontal, 5)
+                            
+                            Text("Next: Data Security (Chapter 4)")
+                                .foregroundStyle(Color.white)
+                        }
+                    })
+                    .padding(.top, 10)
+                    
                 }
             }.padding(.horizontal)
         }.scrollIndicators(.hidden)

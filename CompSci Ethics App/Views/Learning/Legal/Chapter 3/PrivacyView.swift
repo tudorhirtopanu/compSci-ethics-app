@@ -46,6 +46,18 @@ struct PrivacyView: View {
                     
                     Text(data.solution)
                     
+                    NavigationLink(value: LegalChapters.dpaLegislation, label: {
+                        ZStack {
+                            RectangleCard(color: .blue)
+                                .frame(height: 40)
+                                .padding(.horizontal, 5)
+                            
+                            Text("Next: DPA Legislation (Chapter 3.1)")
+                                .foregroundStyle(Color.white)
+                        }
+                    })
+                    .padding(.top, 10)
+                    
                 }
             }.padding(.horizontal)
         }.scrollIndicators(.hidden)

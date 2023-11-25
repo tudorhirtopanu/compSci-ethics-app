@@ -85,6 +85,18 @@ struct DataSecurityView: View {
                     
                     Text(data.dpaLink.importantNote)
                     
+                    NavigationLink(value: LegalChapters.securityThreats, label: {
+                        ZStack {
+                            RectangleCard(color: .blue)
+                                .frame(height: 40)
+                                .padding(.horizontal, 5)
+                            
+                            Text("Next: Security Threats (Chapter 4.1)")
+                                .foregroundStyle(Color.white)
+                        }
+                    })
+                    .padding(.top, 10)
+                    
                 }
             }.padding(.horizontal)
         }.scrollIndicators(.hidden)

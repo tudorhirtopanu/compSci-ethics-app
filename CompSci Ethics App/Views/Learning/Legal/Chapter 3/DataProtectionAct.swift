@@ -85,6 +85,18 @@ struct DataProtectionAct: View {
                         
                     }
                     
+                    NavigationLink(value: LegalChapters.gdpr, label: {
+                        ZStack {
+                            RectangleCard(color: .blue)
+                                .frame(height: 40)
+                                .padding(.horizontal, 5)
+                            
+                            Text("Next: GDPR (Chapter 3.3)")
+                                .foregroundStyle(Color.white)
+                        }
+                    })
+                    .padding(.top, 10)
+                    
                 }
             }.padding(.horizontal)
         }.scrollIndicators(.hidden)

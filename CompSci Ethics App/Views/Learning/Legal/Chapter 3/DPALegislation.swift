@@ -35,6 +35,18 @@ struct DPALegislation: View {
                         
                     }
                     
+                    NavigationLink(value: LegalChapters.dpa, label: {
+                        ZStack {
+                            RectangleCard(color: .blue)
+                                .frame(height: 40)
+                                .padding(.horizontal, 5)
+                            
+                            Text("Next: DPA (Chapter 3.2)")
+                                .foregroundStyle(Color.white)
+                        }
+                    })
+                    .padding(.top, 10)
+                    
                 }
             }.padding(.horizontal)
         }.scrollIndicators(.hidden)

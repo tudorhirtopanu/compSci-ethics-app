@@ -29,7 +29,16 @@ enum LegalChapters {
     case cmaAmendments
     
     // Chapter 3
-    case Privacy
+    case privacy
+    case dpaLegislation
+    case dpa
+    case gdpr
+    
+    // Chapter 4
+    case dataSecurity
+    case securityThreats
+    case reducingRisks
+    case staySafe
    
 }
 
@@ -81,6 +90,7 @@ struct LearnView: View {
                     EthicsView()
                 case .legal:
                     LegalView()
+                        .environmentObject(navigationManager)
                 case .intellectualProperty:
                     IntellectualPropertyView()
                         .environmentObject(navigationManager)
