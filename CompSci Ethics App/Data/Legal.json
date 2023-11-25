@@ -64,19 +64,19 @@
             "actSections":[
                 {
                     "id":0,
-                    "title":"Section One",
+                    "title":"Section 1",
                     "description": "Unauthorised access to computer material",
                     "explanation": "The basic offence of hacking (including failed attempts)"
                 },
                 {
                     "id":1,
-                    "title":"Section Two",
+                    "title":"Section 2",
                     "description": "Unauthorised access with intent to commit or facilitate commission of further offences",
                     "explanation": "When the hacking leads to another offence (e.g. theft)"
                 },
                 {
                     "id":2,
-                    "title":"Section Three",
+                    "title":"Section 3",
                     "description": "Unauthorised modification of computer material",
                     "explanation": "covers the use viruses, worms; also phishing and skimming"
                 }
@@ -98,7 +98,7 @@
             "id":0,
             "title":"Privacy",
             "chapter":"Chapter 3",
-            "definition":"the ability of an individual/group to stop data/information about themselves from becoming known to people other than whom they choose to give access",
+            "definition":"The ability of an individual/group to stop data/information about themselves from becoming known to people other than whom they choose to give access",
             "privacyTemp":"It is increasingly tempting to use peoples’ data for purposes other than that for which it was originally collected (and therefore consented)",
             "dataIssues":[
                 "Data can be sold on to third parties",
