@@ -1,0 +1,107 @@
+[
+    {
+        "id":0,
+        "title":"Ethics",
+        "ethicalBehaviour":{
+            "id":0,
+            "chapter":"Chapter 1",
+            "title":"Ethical Behaviour",
+            "definition":[
+                "The field of study that is concerned with questions of value, that is, judgements about a human behaviour is good or bad.",
+                "A set of principles of right conduct or a theory or a system of moral values",
+                "Doing the right thing according to standards set by society"
+            ],
+            "conflicts":[
+                "What is considered ethically sound in one culture may be unacceptable to another",
+                "Moral/ethical codes vary at all levels from social groups through organisations up to national levels"
+            ],
+            "shortDescription":"Professional behaviour needs to be guided by a moral code that defines clear boundaries to both individuals and organisations",
+            "computerEthics":{
+                "id":0,
+                "title":"What is Computer Ethics",
+                "description":[
+                    "Computer ethics is a system of moral standards or values used as a guideline for computer users",
+                    "A guideline is needed to stop the current technology products from being exploited."
+                ],
+                "example":"replicating original CDs and selling them as pirate software. This unethical behaviour can be controlled by the code of conducts"
+            }
+        },
+        "ethicsVsLegal":{
+            "id":0,
+            "chapter":"Chapter 2",
+            "title":"Ethical vs Legal Behaviour",
+            "description":[
+                "Society must enact laws to enforce ethical behaviour",
+                "What constitutes legal behaviour is most often aligned with ethical behaviour, although this is not always the case",
+                "Impossible to legislate against all possible instances of wrongful behaviour",
+                "The fast pace of technological change means legislation often struggles to keep up with new problems",
+                "Ethical codes of practice must fill the gap in the mean-time",
+                "The question  of “Is an act illegal?” is different from the question of “Is an act ethical?”",
+                "The law cannot categorize all ethical requirements"
+            ]
+        },
+        "professionalEthics":{
+            "id":0,
+            "chapter":"Chapter 3",
+            "title":"Professional Ethics",
+            "description":[
+                "British Computer Society (BCS) is the main professional body for IT professionals in UK",
+                "BCS has a Code of Conduct that all its members are expected to follow"
+            ],
+            "codeOfConductSections":[
+                {
+                    "id":0,
+                    "title":"The public interest",
+                    "subtitle":"You make IT for everyone",
+                    "description":"Working together to address issues in your profession and in wider society, you want everyone to have access to IT. You share what you know, uphold standards and conduct yourself professionally and fairly at all times. The public interest"
+                },
+                {
+                "id":1,
+                "title":"Professional competence and integrity",
+                "subtitle":"Show what you know, learn what you don’t",
+                "description":"Working together to address issues in your profession and in wider society, you want everyone to have access to IT. You share what you know, uphold standards and conduct yourself professionally and fairly at all times. The public interest"
+                },
+                {
+                "id":2,
+                "title":"Duty to relevant authority",
+                "subtitle":"Respect the organisation or individual you work for",
+                "description":"You work with due care and diligence, acting in your client or company’s best interests at all times. You take personal and collective responsibility for your actions while maintaining discretion and ethical standards."
+                },
+                {
+                "id":3,
+                "title":"Duty to the profession",
+                "subtitle":"Keep IT real. Keep IT professional. Pass IT on",
+                "description":"As a BCS member, you’re an ambassador for the IT industry and use your voice to help promote it positively to the world. You support your IT colleagues and other members in their growth both personally and professionally"
+                }
+            ]
+        },
+        "brunelEthics":{
+            "id":0,
+            "chapter":"Chapter 4",
+            "title":"Ethics at Brunel",
+            "description":"Any research that involves human participation, the collection or study of their data, organs and/or tissue, and that is carried out on Brunel University premises and/or by Brunel University staff or Brunel University students under the supervision of Brunel University staff requires ethical approval",
+            "guidelinesToFollow":[
+                {
+                    "title":"Consent",
+                    "description":[
+                        "Whenever possible, the investigator should inform all participants of the objectives of the investigation. The investigator should inform the participants of all aspects of the research or intervention that might reasonably be expected to influence willingness to participate",
+                        "The investigator should, normally, explain all other aspects of the research or intervention about which the participants enquire…’"
+                    ]
+                },
+                {
+                    "title":"Withdrawal",
+                    "description":[
+                        "At the onset of the investigation investigators should make plain to participants their right to withdraw from the research at any time, irrespective of whether or not payment or other inducement has been offered",
+                        "In the light of experience of the investigation, or as a result of debriefing, the participant has the right to withdraw retrospectively any consent given, and to require that their own data, including recordings, be destroyed"
+                    ]
+                },
+                {
+                    "title":"Confidentiality",
+                    "description":[
+                        "Subject to the requirements of legislation, including the Data Protection Act, information obtained about a participant during an investigation is confidential unless otherwise agreed in advance…Participants…have a right to expect that information they provide will be treated confidentially and, if published, will not be identifiable as theirs"
+                    ]
+                }
+            ]
+        }
+    }
+]
