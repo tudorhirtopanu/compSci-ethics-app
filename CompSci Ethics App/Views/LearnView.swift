@@ -42,6 +42,15 @@ enum LegalChapters {
    
 }
 
+enum EthicsChapters {
+    
+    case ethicalBehaviour
+    case ethicsVsLegal
+    case professionalEthics
+    case brunelEthics
+    
+}
+
 struct LearnView: View {
     
     @EnvironmentObject var navigationManager:NavigationManager
@@ -88,6 +97,7 @@ struct LearnView: View {
                     
                 case .ethics:
                     EthicsView()
+                        .environmentObject(navigationManager)
                 case .legal:
                     LegalView()
                         .environmentObject(navigationManager)
