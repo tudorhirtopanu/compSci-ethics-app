@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+class EthicsManager:ObservableObject {
+    
+    @Published var ethicsData = [EthicsData]()
+    
+    init(){
+        self.ethicsData = DataService.getLocalData(fileName: "Ethics", fileType: "json", objectType: EthicsData.self)
+    }
+    
+}
