@@ -64,7 +64,7 @@ class BrunelEthics : Identifiable, Decodable {
 }
 
 class GuidelinesToFollow: Identifiable, Decodable {
-    var id = UUID()
+    var id:Int
     var title:String
     var description:[String]
 }
