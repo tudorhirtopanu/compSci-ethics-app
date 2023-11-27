@@ -82,6 +82,7 @@
             "description":"Any research that involves human participation, the collection or study of their data, organs and/or tissue, and that is carried out on Brunel University premises and/or by Brunel University staff or Brunel University students under the supervision of Brunel University staff requires ethical approval",
             "guidelinesToFollow":[
                 {
+                    "id":0,
                     "title":"Consent",
                     "description":[
                         "Whenever possible, the investigator should inform all participants of the objectives of the investigation. The investigator should inform the participants of all aspects of the research or intervention that might reasonably be expected to influence willingness to participate",
@@ -89,6 +90,7 @@
                     ]
                 },
                 {
+                    "id":1,
                     "title":"Withdrawal",
                     "description":[
                         "At the onset of the investigation investigators should make plain to participants their right to withdraw from the research at any time, irrespective of whether or not payment or other inducement has been offered",
@@ -96,6 +98,7 @@
                     ]
                 },
                 {
+                    "id":2,
                     "title":"Confidentiality",
                     "description":[
                         "Subject to the requirements of legislation, including the Data Protection Act, information obtained about a participant during an investigation is confidential unless otherwise agreed in advance…Participants…have a right to expect that information they provide will be treated confidentially and, if published, will not be identifiable as theirs"
