@@ -1,238 +1,238 @@
-{
-    "sections":[
-        {
-            "id":0,
-            "title":"Ethics",
-            "questions":[
-                {
-                    "id":"ethics_1",
-                    "text":"Morality is about: ",
-                    "answers":{
-                        "What is considered as correct within a society":false,
-                        "Where individuals have a conscious choice to make a right and ethical decision":false,
-                        "Making the right decision where there is a chance to do wrong":false,
-                        "Defining what is right and wrong for an individual or a community":true
-                    },
-                    "sectionTag":"Ethics",
-                    "subjectTag":"Morality"
+[
+    
+    {
+        "id":0,
+        "title":"Ethics",
+        "questions":[
+            {
+                "id":"ethics_1",
+                "text":"Morality is about: ",
+                "answers":{
+                    "What is considered as correct within a society":false,
+                    "Where individuals have a conscious choice to make a right and ethical decision":false,
+                    "Making the right decision where there is a chance to do wrong":false,
+                    "Defining what is right and wrong for an individual or a community":true
                 },
-                {
-                    "id":"ethics_2",
-                    "text":"With regards to IT, which of the following is an example of unethical? ",
-                    "answers":{
-                        "Revealing trade secrets":false,
-                        "Installing unlicensed software":false,
-                        "Accessing personal information":false,
-                        "All of the above":true
-                    },
-                    "sectionTag":"Ethics",
-                    "subjectTag":"IT Ethics"
+                "sectionTag":"Ethics",
+                "subjectTag":"Morality"
+            },
+            {
+                "id":"ethics_2",
+                "text":"With regards to IT, which of the following is an example of unethical? ",
+                "answers":{
+                    "Revealing trade secrets":false,
+                    "Installing unlicensed software":false,
+                    "Accessing personal information":false,
+                    "All of the above":true
                 },
-                {
-                    "id":"ethics_3",
-                    "text":"It is important the participants in a research study feel sure that their data will not be used to identify them in any way. What ethical principle emphasises this?",
-                    "answers":{
-                        "Transparency":false,
-                        "Withdrawal":false,
-                        "Consent":false,
-                        "Confidentiality":true
-                    },
-                    "sectionTag":"Ethics",
-                    "subjectTag":"Brunel Ethics"
+                "sectionTag":"Ethics",
+                "subjectTag":"IT Ethics"
+            },
+            {
+                "id":"ethics_3",
+                "text":"It is important the participants in a research study feel sure that their data will not be used to identify them in any way. What ethical principle emphasises this?",
+                "answers":{
+                    "Transparency":false,
+                    "Withdrawal":false,
+                    "Consent":false,
+                    "Confidentiality":true
                 },
-                {
-                    "id":"ethics_4",
-                    "text":"A gap often exists between ethical views/rules governing data use and the legislation. Why does the legislation have difficulty keeping up?",
-                    "answers":{
-                        "Societal norms and values evolve over time":false,
-                        "Technology evolves very quickly":false,
-                        "It's impossible to legislate against all possible instances wrong-doing":false,
-                        "All of them":true
-                    },
-                    "sectionTag":"Ethics",
-                    "subjectTag":"Ethics vs Legal"
+                "sectionTag":"Ethics",
+                "subjectTag":"Brunel Ethics"
+            },
+            {
+                "id":"ethics_4",
+                "text":"A gap often exists between ethical views/rules governing data use and the legislation. Why does the legislation have difficulty keeping up?",
+                "answers":{
+                    "Societal norms and values evolve over time":false,
+                    "Technology evolves very quickly":false,
+                    "It's impossible to legislate against all possible instances wrong-doing":false,
+                    "All of them":true
                 },
-                {
-                    "id":"ethics_5",
-                    "text":"Which of the following behaviours would most likely be described as unethical within UK society?",
-                    "answers":{
-                        "Terminating a mobile phone contract early in response to an unexpected and unreasonable tariff increase":false,
-                        "A salesman accessing his neighbour’s rental history to gain conversation ideas":true,
-                        "Writing down your credit card PIN number so that you don’t forget it":false,
-                        "Breaking the speed limit whilst driving an critically ill person to hospital":false
-                    },
-                    "sectionTag":"Ethics",
-                    "subjectTag":"Ethics in the real world"
+                "sectionTag":"Ethics",
+                "subjectTag":"Ethics vs Legal"
+            },
+            {
+                "id":"ethics_5",
+                "text":"Which of the following behaviours would most likely be described as unethical within UK society?",
+                "answers":{
+                    "Terminating a mobile phone contract early in response to an unexpected and unreasonable tariff increase":false,
+                    "A salesman accessing his neighbour’s rental history to gain conversation ideas":true,
+                    "Writing down your credit card PIN number so that you don’t forget it":false,
+                    "Breaking the speed limit whilst driving an critically ill person to hospital":false
                 },
-                {
-                    "id":"ethics_6",
-                    "text":"Steve works for a library. He wants to ask his neighbour on a date, so has a quick look on the system at her rental history to gain conversational ideas. This kind of behaviour is close to be of:",
-                    "answers":{
-                        "illegal":false,
-                        "legal":false,
-                        "unethical":true,
-                        "ethical":false
-                    },
-                    "sectionTag":"Ethics",
-                    "subjectTag":"Ethics in the real world"
-                }
-            ]
-        },
-        {
-            "id":1,
-            "title":"Legal",
-            "questions":[
-                {
-                    "id":"legal_1",
-                    "text":"One of the 8 key principles of Data Protection Act (1998) is that:",
-                    "answers":{
-                        "Personal data should be kept for longer":false,
-                        "Personal data shall be obtained for one or more specific purposes and shall be processed further for other purposes":false,
-                        "Personal data should be accurate and kept to date":true,
-                        "Personal data should be inadequate, relevant and excessive":false
-                    },
-                    "sectionTag":"Legal",
-                    "subjectTag":"Data Protection Act"
+                "sectionTag":"Ethics",
+                "subjectTag":"Ethics in the real world"
+            },
+            {
+                "id":"ethics_6",
+                "text":"Steve works for a library. He wants to ask his neighbour on a date, so has a quick look on the system at her rental history to gain conversational ideas. This kind of behaviour is close to be of:",
+                "answers":{
+                    "illegal":false,
+                    "legal":false,
+                    "unethical":true,
+                    "ethical":false
                 },
-                {
-                    "id":"legal_2",
-                    "text":"Sniffing is a kind of what?",
-                    "answers":{
-                        "Electronic spying or eavesdropping":true,
-                        "Software theft":false,
-                        "Hacking activity":false,
-                        "Denial of service attack":false
-                    },
-                    "sectionTag":"Legal",
-                    "subjectTag":"Computer Software Crime"
+                "sectionTag":"Ethics",
+                "subjectTag":"Ethics in the real world"
+            }
+        ]
+    },
+    {
+        "id":1,
+        "title":"Legal",
+        "questions":[
+            {
+                "id":"legal_1",
+                "text":"One of the 8 key principles of Data Protection Act (1998) is that:",
+                "answers":{
+                    "Personal data should be kept for longer":false,
+                    "Personal data shall be obtained for one or more specific purposes and shall be processed further for other purposes":false,
+                    "Personal data should be accurate and kept to date":true,
+                    "Personal data should be inadequate, relevant and excessive":false
                 },
-                {
-                    "id":"legal_3",
-                    "text":"The 1998 revision of the Data Protection Act brought new rights to data subjects. Which of the following is not one of those new rights?",
-                    "answers":{
-                        "To know why and how their data is processed":false,
-                        "To have free access to any data held about them":true,
-                        "To object to the processing of data if damage or distress is likely to be caused":false,
-                        "To know the nature of data held about them":false
-                    },
-                    "sectionTag":"Legal",
-                    "subjectTag":"Data Protection Act"
+                "sectionTag":"Legal",
+                "subjectTag":"Data Protection Act"
+            },
+            {
+                "id":"legal_2",
+                "text":"Sniffing is a kind of what?",
+                "answers":{
+                    "Electronic spying or eavesdropping":true,
+                    "Software theft":false,
+                    "Hacking activity":false,
+                    "Denial of service attack":false
                 },
-                {
-                    "id":"legal_4",
-                    "text":"There are four main areas covered by the BCS Code of Conduct. Which of the following is NOT one of these areas?",
-                    "answers":{
-                        "The public interest":false,
-                        "Duty to the profession":false,
-                        "The private interest":true,
-                        "Professional competence and integrity":false
-                    },
-                    "sectionTag":"Legal",
-                    "subjectTag":"BCS Code of Conduct"
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Software Crime"
+            },
+            {
+                "id":"legal_3",
+                "text":"The 1998 revision of the Data Protection Act brought new rights to data subjects. Which of the following is not one of those new rights?",
+                "answers":{
+                    "To know why and how their data is processed":false,
+                    "To have free access to any data held about them":true,
+                    "To object to the processing of data if damage or distress is likely to be caused":false,
+                    "To know the nature of data held about them":false
                 },
-                {
-                    "id":"legal_5",
-                    "text":"Skimming is a kind of :",
-                    "answers":{
-                        "Software theft":false,
-                        "Hacking activity":false,
-                        "Virus":false,
-                        "Identity theft":true
-                    },
-                    "sectionTag":"Legal",
-                    "subjectTag":"Computer Software Crime"
+                "sectionTag":"Legal",
+                "subjectTag":"Data Protection Act"
+            },
+            {
+                "id":"legal_4",
+                "text":"There are four main areas covered by the BCS Code of Conduct. Which of the following is NOT one of these areas?",
+                "answers":{
+                    "The public interest":false,
+                    "Duty to the profession":false,
+                    "The private interest":true,
+                    "Professional competence and integrity":false
                 },
-                {
-                    "id":"legal_6",
-                    "text":"Sending a computer virus via e-mail is considered as which of the following?",
-                    "answers":{
-                        "Law breaking":true,
-                        "Unethical":false,
-                        "Ethical":false,
-                        "None":false
-                    },
-                    "sectionTag":"Legal",
-                    "subjectTag":"Computer Software Crime"
+                "sectionTag":"Legal",
+                "subjectTag":"BCS Code of Conduct"
+            },
+            {
+                "id":"legal_5",
+                "text":"Skimming is a kind of :",
+                "answers":{
+                    "Software theft":false,
+                    "Hacking activity":false,
+                    "Virus":false,
+                    "Identity theft":true
                 },
-                {
-                    "id":"legal_7",
-                    "text":"Sending of large quantities of unsolicited e-mails to recipients is known as",
-                    "answers":{
-                        "Phishing":false,
-                        "Hacking":false,
-                        "Identity theft":false,
-                        "Spamming":true
-                    },
-                    "sectionTag":"Legal",
-                    "subjectTag":"Computer Software Crime"
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Software Crime"
+            },
+            {
+                "id":"legal_6",
+                "text":"Sending a computer virus via e-mail is considered as which of the following?",
+                "answers":{
+                    "Law breaking":true,
+                    "Unethical":false,
+                    "Ethical":false,
+                    "None":false
                 },
-                {
-                    "id":"legal_8",
-                    "text":"Sending of large quantities of unsolicited e-mails to recipients is known as",
-                    "answers":{
-                        "Sniffing":false,
-                        "Cracking":false,
-                        "Hacking":true,
-                        "Phishing":false
-                    },
-                    "sectionTag":"Legal",
-                    "subjectTag":"Computer Software Crime"
-                }
-            ]
-        },
-        {
-            "id":2,
-            "title":"Intellectual Property",
-            "questions":[
-                {
-                    "id":"ip_1",
-                    "text":"A more powerful means of protecting Intellectual Property is: ",
-                    "answers":{
-                        "Firewall":false,
-                        "Copyright":false,
-                        "Patent":true,
-                        "Internet Password":false
-                    },
-                    "sectionTag":"Intellectual Property",
-                    "subjectTag":"Protecting Intellectual Property"
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Software Crime"
+            },
+            {
+                "id":"legal_7",
+                "text":"Sending of large quantities of unsolicited e-mails to recipients is known as",
+                "answers":{
+                    "Phishing":false,
+                    "Hacking":false,
+                    "Identity theft":false,
+                    "Spamming":true
                 },
-                {
-                    "id":"ip_2",
-                    "text":"Which of the following is not a type of copyright work? ",
-                    "answers":{
-                        "Literary works":false,
-                        "Sculpture":false,
-                        "Furniture":true,
-                        "Musical works":false
-                    },
-                    "sectionTag":"Intellectual Property",
-                    "subjectTag":"Copyright"
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Software Crime"
+            },
+            {
+                "id":"legal_8",
+                "text":"Sending of large quantities of unsolicited e-mails to recipients is known as",
+                "answers":{
+                    "Sniffing":false,
+                    "Cracking":false,
+                    "Hacking":true,
+                    "Phishing":false
                 },
-                {
-                    "id":"ip_3",
-                    "text":"Which of the following statements is true about patents? ",
-                    "answers":{
-                        "Provides automatic protection of any intellectual property":false,
-                        "Protects both the idea and any instantiation of that idea":true,
-                        "Is a confidential document that is only published after a set period of time":false,
-                        "Is commonly used to protect computer software":false
-                    },
-                    "sectionTag":"Intellectual Property",
-                    "subjectTag":"Patents"
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Software Crime"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "title":"Intellectual Property",
+        "questions":[
+            {
+                "id":"ip_1",
+                "text":"A more powerful means of protecting Intellectual Property is: ",
+                "answers":{
+                    "Firewall":false,
+                    "Copyright":false,
+                    "Patent":true,
+                    "Internet Password":false
                 },
-                {
-                    "id":"ip_4",
-                    "text":"UK developer normally have to protect their software products through:",
-                    "answers":{
-                        "Copyright":true,
-                        "Patent":false,
-                        "Copyright & Patent":false,
-                        "None":false
-                    },
-                    "sectionTag":"Intellectual Property",
-                    "subjectTag":"Protecting Intellectual Property"
-                }
-            ]
-        }
-    ]
-}
+                "sectionTag":"Intellectual Property",
+                "subjectTag":"Protecting Intellectual Property"
+            },
+            {
+                "id":"ip_2",
+                "text":"Which of the following is not a type of copyright work? ",
+                "answers":{
+                    "Literary works":false,
+                    "Sculpture":false,
+                    "Furniture":true,
+                    "Musical works":false
+                },
+                "sectionTag":"Intellectual Property",
+                "subjectTag":"Copyright"
+            },
+            {
+                "id":"ip_3",
+                "text":"Which of the following statements is true about patents? ",
+                "answers":{
+                    "Provides automatic protection of any intellectual property":false,
+                    "Protects both the idea and any instantiation of that idea":true,
+                    "Is a confidential document that is only published after a set period of time":false,
+                    "Is commonly used to protect computer software":false
+                },
+                "sectionTag":"Intellectual Property",
+                "subjectTag":"Patents"
+            },
+            {
+                "id":"ip_4",
+                "text":"UK developer normally have to protect their software products through:",
+                "answers":{
+                    "Copyright":true,
+                    "Patent":false,
+                    "Copyright & Patent":false,
+                    "None":false
+                },
+                "sectionTag":"Intellectual Property",
+                "subjectTag":"Protecting Intellectual Property"
+            }
+        ]
+    }
+    
+]
