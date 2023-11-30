@@ -36,6 +36,10 @@
 		8B29EEB82B1522CD006F6EEE /* EthicVsLegalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29EEB72B1522CD006F6EEE /* EthicVsLegalView.swift */; };
 		8B29EEBA2B152385006F6EEE /* ProfessionalEthicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29EEB92B152385006F6EEE /* ProfessionalEthicsView.swift */; };
 		8B29EEBC2B152585006F6EEE /* BrunelEthicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29EEBB2B152585006F6EEE /* BrunelEthicsView.swift */; };
+		8B29EEBE2B167370006F6EEE /* Questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B29EEBD2B167370006F6EEE /* Questions.json */; };
+		8B29EEC02B168F18006F6EEE /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29EEBF2B168F18006F6EEE /* Questions.swift */; };
+		8B29EEC22B16918B006F6EEE /* QuestionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29EEC12B16918B006F6EEE /* QuestionsManager.swift */; };
+		8B29EEC72B17B207006F6EEE /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29EEC62B17B207006F6EEE /* QuestionView.swift */; };
 		8BDA61742B0F762B00962DFE /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA61732B0F762B00962DFE /* NavigationManager.swift */; };
 		8BDA61762B0F7D7900962DFE /* IPBasics2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8BDA61752B0F7D7900962DFE /* IPBasics2.mov */; };
 		8BDA61782B0F7FCC00962DFE /* Legal.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BDA61772B0F7FCC00962DFE /* Legal.json */; };
@@ -80,6 +84,10 @@
 		8B29EEB72B1522CD006F6EEE /* EthicVsLegalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthicVsLegalView.swift; sourceTree = "<group>"; };
 		8B29EEB92B152385006F6EEE /* ProfessionalEthicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalEthicsView.swift; sourceTree = "<group>"; };
 		8B29EEBB2B152585006F6EEE /* BrunelEthicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrunelEthicsView.swift; sourceTree = "<group>"; };
+		8B29EEBD2B167370006F6EEE /* Questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Questions.json; sourceTree = "<group>"; };
+		8B29EEBF2B168F18006F6EEE /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		8B29EEC12B16918B006F6EEE /* QuestionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsManager.swift; sourceTree = "<group>"; };
+		8B29EEC62B17B207006F6EEE /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		8BDA61732B0F762B00962DFE /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		8BDA61752B0F7D7900962DFE /* IPBasics2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IPBasics2.mov; sourceTree = "<group>"; };
 		8BDA61772B0F7FCC00962DFE /* Legal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Legal.json; sourceTree = "<group>"; };
@@ -172,6 +180,7 @@
 				8B29EEAC2B13A07A006F6EEE /* Ethics.json */,
 				8BDA61772B0F7FCC00962DFE /* Legal.json */,
 				8B1454852B0D4490001AB56D /* IntellectualProperty.json */,
+				8B29EEBD2B167370006F6EEE /* Questions.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -181,6 +190,7 @@
 			children = (
 				8B1454792B0C0542001AB56D /* LearnView.swift */,
 				8B14547B2B0C054D001AB56D /* QuizView.swift */,
+				8B29EEC32B17B102006F6EEE /* Quiz */,
 				8B14547D2B0D426B001AB56D /* Learning */,
 				8B14548D2B0D4E65001AB56D /* ReusableViews */,
 			);
@@ -193,6 +203,7 @@
 				8B29EEB12B151C07006F6EEE /* EthicsData.swift */,
 				8BDA61792B0FB06D00962DFE /* LegalData.swift */,
 				8B1454922B0D5785001AB56D /* IntellectualPropertyData.swift */,
+				8B29EEBF2B168F18006F6EEE /* Questions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,6 +215,7 @@
 				8BDA617B2B0FDDD800962DFE /* LegalManager.swift */,
 				8B1454902B0D55C3001AB56D /* IntellectualPropertyManager.swift */,
 				8BDA61732B0F762B00962DFE /* NavigationManager.swift */,
+				8B29EEC12B16918B006F6EEE /* QuestionsManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -286,6 +298,14 @@
 				8B29EEB72B1522CD006F6EEE /* EthicVsLegalView.swift */,
 			);
 			path = "Chapter 2";
+			sourceTree = "<group>";
+		};
+		8B29EEC32B17B102006F6EEE /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				8B29EEC62B17B207006F6EEE /* QuestionView.swift */,
+			);
+			path = Quiz;
 			sourceTree = "<group>";
 		};
 		8BDA617D2B0FE73200962DFE /* Legal */ = {
@@ -390,6 +410,7 @@
 				8B1454702B0BF75E001AB56D /* Assets.xcassets in Resources */,
 				8B1454862B0D4490001AB56D /* IntellectualProperty.json in Resources */,
 				8B29EEAD2B13A07A006F6EEE /* Ethics.json in Resources */,
+				8B29EEBE2B167370006F6EEE /* Questions.json in Resources */,
 				8BDA61762B0F7D7900962DFE /* IPBasics2.mov in Resources */,
 				8B14548C2B0D4DEB001AB56D /* IPBasics.mp4 in Resources */,
 				8B1454A32B0F54B2001AB56D /* Patents.mp4 in Resources */,
@@ -404,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B29EEC22B16918B006F6EEE /* QuestionsManager.swift in Sources */,
 				8BDA617A2B0FB06D00962DFE /* LegalData.swift in Sources */,
 				8B0CE9462B128BA3006D3650 /* DataSecurityView.swift in Sources */,
 				8BDA61902B121ECC00962DFE /* GDPRView.swift in Sources */,
@@ -425,9 +447,11 @@
 				8B1454812B0D4441001AB56D /* LegalView.swift in Sources */,
 				8BDA61742B0F762B00962DFE /* NavigationManager.swift in Sources */,
 				8B14549D2B0F4DD0001AB56D /* PatentsView.swift in Sources */,
+				8B29EEC02B168F18006F6EEE /* Questions.swift in Sources */,
 				8B0CE9482B1290D1006D3650 /* SecurityThreatsView.swift in Sources */,
 				8B29EEBC2B152585006F6EEE /* BrunelEthicsView.swift in Sources */,
 				8B1454982B0E9879001AB56D /* RectangleCard.swift in Sources */,
+				8B29EEC72B17B207006F6EEE /* QuestionView.swift in Sources */,
 				8BDA61882B12161000962DFE /* PrivacyView.swift in Sources */,
 				8B29EEB82B1522CD006F6EEE /* EthicVsLegalView.swift in Sources */,
 				8BDA617C2B0FDDD800962DFE /* LegalManager.swift in Sources */,

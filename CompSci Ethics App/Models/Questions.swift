@@ -16,7 +16,13 @@ class Quiz: Identifiable, Decodable {
 class Questions: Identifiable, Decodable {
     var id:String
     var text:String
-    var answers:[String:Bool]
+    var answers:[Answers]
     var sectionTag:String
     var subjectTag:String
 }
+
+class Answers: Identifiable, Decodable {
+    var text:String
+    var correct:Bool
+}
+
