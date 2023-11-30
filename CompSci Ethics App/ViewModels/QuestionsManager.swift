@@ -16,10 +16,12 @@ class QuestionsManager:ObservableObject {
     
     @Published var chosenQuestions:[Questions] = []
     
-    var currentQuestion: Questions {
-        let randomizedQuestions = quiz[0].questions.shuffled()
-        return randomizedQuestions[questionNumber]
-    }
+    @Published var section: QuizSections = .ethics {
+            didSet {
+                // Call the method when the section value changes
+                chosenQuestions = randomizeQuestions(section: section.rawValue)
+            }
+        }
     
     func randomizeQuestions(section:Int) -> [Questions] {
         let randomizedQuestions = quiz[section].questions.shuffled()
@@ -30,17 +32,17 @@ class QuestionsManager:ObservableObject {
     init() {
         self.quiz = DataService.getLocalData(fileName: "Questions", fileType: "json", objectType: Quiz.self)
         
-        self.chosenQuestions = randomizeQuestions(section: 1)
+        self.chosenQuestions = randomizeQuestions(section: section.rawValue)
     }
     
     func returnQuestion() -> Questions {
         
-        return quiz[1].questions[questionNumber]
+        return quiz[section.rawValue].questions[questionNumber]
     }
     
     func increaseQuestionNum() {
         
-        if questionNumber < quiz[1].questions.count - 1 {
+        if questionNumber < quiz[section.rawValue].questions.count - 1 {
             questionNumber += 1
         }
     }

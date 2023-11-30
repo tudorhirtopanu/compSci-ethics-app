@@ -23,7 +23,7 @@ struct QuestionView: View {
     var body: some View {
         
         VStack {
-            
+                        
             HStack {
                 
                 Text(qm.chosenQuestions[qm.questionNumber].sectionTag)
@@ -145,6 +145,9 @@ struct QuestionView: View {
                 })
             }
             
+        }
+        .onDisappear{
+            qm.questionNumber = 0
         }
         .padding(.horizontal)
         
