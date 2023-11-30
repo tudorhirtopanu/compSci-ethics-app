@@ -253,12 +253,24 @@
             {
                 "id":"legal_5",
                 "text":"Skimming is a kind of :",
-                "answers":{
-                    "Software theft":false,
-                    "Hacking activity":false,
-                    "Virus":false,
-                    "Identity theft":true
-                },
+                "answers":[
+                    {
+                        "text":"Software theft",
+                        "correct":false
+                    },
+                    {
+                        "text":"Hacking activity",
+                        "correct":false
+                    },
+                    {
+                        "text":"Virus",
+                        "correct":false
+                    },
+                    {
+                        "text":"Identity theft",
+                        "correct":true
+                    }
+                ],
                 "sectionTag":"Legal",
                 "subjectTag":"Computer Software Crime"
             },
