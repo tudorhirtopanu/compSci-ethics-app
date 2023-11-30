@@ -12,7 +12,7 @@ class QuestionsManager:ObservableObject {
     
     @Published var quiz = [Quiz]()
     
-    @Published var questionNumber = 1
+    @Published var questionNumber = 0
     
     @Published var chosenQuestions:[Questions] = []
     
@@ -39,12 +39,10 @@ class QuestionsManager:ObservableObject {
     }
     
     func increaseQuestionNum() {
-        questionNumber += 1
-
-            if questionNumber >= quiz[1].questions.count {
-                // Handle end of quiz, reset or perform any necessary actions
-                questionNumber = 0
-            }
+        
+        if questionNumber < quiz[1].questions.count - 1 {
+            questionNumber += 1
+        }
     }
     
     func checkAnswer(selectedIndex: Int, currentQuestion:Questions) -> String {

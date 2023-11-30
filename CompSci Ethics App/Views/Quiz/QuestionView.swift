@@ -24,7 +24,15 @@ struct QuestionView: View {
         
         VStack {
             
-            Text(String(qm.chosenQuestions.count))
+            HStack {
+                
+                Text(qm.chosenQuestions[qm.questionNumber].sectionTag)
+                Spacer()
+                                
+                Text("\(qm.questionNumber + 1)/\(qm.chosenQuestions.count)")
+                    .font(.title3)
+                
+            }
 
             Text(qm.chosenQuestions[qm.questionNumber].text)
                 .font(.title2)
@@ -41,14 +49,43 @@ struct QuestionView: View {
                     selectedIndex = i
                 }, label: {
                     ZStack {
+                        if hasSubmitted == false {
+                            // Cards are white and selected one is grey
+                            RectangleCard(color: selectedIndex == i ? .gray : .white)
+                                //.opacity(0.4)
+                                .frame(height: 90)
+                        } else {
+                            
+                            // correct answer selected, make it green
+                            if qm.chosenQuestions[qm.questionNumber].answers[selectedIndex ?? -1].correct == true {
+                             RectangleCard(color: selectedIndex == i ? .green : .white)
+                                    .frame(height: 90)
+                            } else {
+                                
+                                var cardColour:Color {
+                                    if selectedIndex == i {
+                                        return .red
+                                    } else {
+                                        return .white
+                                    }
+                                }
+                                
+                                RectangleCard(color: cardColour)
+                                .frame(height: 90)
+                            }
+                            
+                        }
                         
-                        RectangleCard(color: selectedIndex == i ? .gray : .white)
-                            .frame(height: 90)
+                        
+                        // when locked in, make correct card green and wrong red.
+//
+                        
                         
                         
                         Text(qm.chosenQuestions[qm.questionNumber].answers[i].text)
                             .multilineTextAlignment(.leading)
                             .foregroundStyle(Color.black)
+                        
                     }
                 })
                 
@@ -59,7 +96,7 @@ struct QuestionView: View {
                 Button(action: {
                     
                     // add function so that it checks if there is a nect question
-                    qm.questionNumber += 1
+                    qm.increaseQuestionNum()
                     
                     hasSubmitted = false
                     
