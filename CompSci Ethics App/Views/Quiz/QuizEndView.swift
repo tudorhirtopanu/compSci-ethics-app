@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct QuizEndView: View {
+    
+    @EnvironmentObject var nm:NavigationManager
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("End of Quiz")
+            
+            Button(action: {
+                nm.goBackOne()
+            }, label: {
+                Text("Back")
+            })
+        }
     }
 }
 
 #Preview {
     QuizEndView()
+        .environmentObject(NavigationManager())
 }
