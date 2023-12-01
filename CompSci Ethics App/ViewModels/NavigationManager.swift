@@ -16,4 +16,8 @@ class NavigationManager: ObservableObject {
         path = NavigationPath()
     }
     
+    func goBackOne() {
+        path.removeLast()
+    }
+    
 }
