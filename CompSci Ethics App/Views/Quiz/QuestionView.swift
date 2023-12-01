@@ -12,6 +12,7 @@ import SwiftUI
 struct QuestionView: View {
     
     @EnvironmentObject var qm:QuestionsManager
+    @EnvironmentObject var nm:NavigationManager
     
     @State var questionArray:[Questions] = []
     
@@ -19,11 +20,13 @@ struct QuestionView: View {
     @State var displayAnswer:String?
     
     @State var hasSubmitted:Bool = false
+    
+    @State var quizEnded:Bool = false
         
     var body: some View {
         
         VStack {
-                        
+                                
             HStack {
                 
                 Text(qm.chosenQuestions[qm.questionNumber].sectionTag)
@@ -75,77 +78,101 @@ struct QuestionView: View {
                             }
                             
                         }
-                        
-                        
-                        // when locked in, make correct card green and wrong red.
-//
-                        
-                        
-                        
+                        // when locked in, make correct card green and wrong red
                         Text(qm.chosenQuestions[qm.questionNumber].answers[i].text)
                             .multilineTextAlignment(.leading)
                             .foregroundStyle(Color.black)
                         
                     }
                 })
+                .disabled(hasSubmitted)
                 
             }
             
-            if hasSubmitted {
-                
-                Button(action: {
-                    
-                    // add function so that it checks if there is a nect question
-                    qm.increaseQuestionNum()
-                    
-                    hasSubmitted = false
-                    
-                    selectedIndex = nil
-                    
-                    displayAnswer = nil
-                    
-                }, label: {
-                    ZStack{
-                        RectangleCard(color: .blue)
-                            .frame(height: 60)
-                        
-                        
-                        Text("Next Question")
-                            .font(.title2)
-                            .fontWeight(.medium)
-                            .multilineTextAlignment(.leading)
-                            .foregroundStyle(Color.white)
+//            if qm.questionNumber < qm.quiz[qm.section.rawValue].questions.count - 1{
+                if hasSubmitted {
+                    if qm.questionNumber < qm.quiz[qm.section.rawValue].questions.count - 1{
+                        Button(action: {
+                            
+                            // add function so that it checks if there is a nect question
+                            qm.increaseQuestionNum()
+                            
+                            hasSubmitted = false
+                            
+                            selectedIndex = nil
+                            
+                            displayAnswer = nil
+                            
+                        }, label: {
+                            ZStack{
+                                RectangleCard(color: .blue)
+                                    .frame(height: 60)
+                                
+                                
+                                Text("Next Question")
+                                    .font(.title2)
+                                    .fontWeight(.medium)
+                                    .multilineTextAlignment(.leading)
+                                    .foregroundStyle(Color.white)
+                            }
+                        })
+                    } else {
+                        Button(action: {
+                            quizEnded = true
+                        }, label: {
+                            ZStack{
+                                RectangleCard(color: .blue)
+                                    .frame(height: 60)
+                                
+                                
+                                Text("Finish")
+                                    .font(.title2)
+                                    .fontWeight(.medium)
+                                    .multilineTextAlignment(.leading)
+                                    .foregroundStyle(Color.white)
+                            }
+                        })
                     }
-                })
-                
-            } else {
-                Button(action: {
                     
-                    if let selectedIndex = selectedIndex {
-                        let result = qm.checkAnswer(selectedIndex: selectedIndex, currentQuestion: qm.chosenQuestions[qm.questionNumber])
-                        
-                        displayAnswer = result
-                        print(result)
-                    }
                     
-                    hasSubmitted = true
-                    
-                }, label: {
-                    ZStack{
-                        RectangleCard(color: .blue)
-                            .frame(height: 60)
+                } else {
+                    Button(action: {
                         
+                        if let selectedIndex = selectedIndex {
+                            let result = qm.checkAnswer(selectedIndex: selectedIndex, currentQuestion: qm.chosenQuestions[qm.questionNumber])
+                            
+                            displayAnswer = result
+                            print(result)
+                        }
                         
-                        Text("Lock In")
-                            .font(.title2)
-                            .fontWeight(.medium)
-                            .multilineTextAlignment(.leading)
-                            .foregroundStyle(Color.white)
-                    }
-                })
-            }
+                        hasSubmitted = true
+                        
+                    }, label: {
+                        ZStack{
+                            RectangleCard(color: .blue)
+                                .frame(height: 60)
+                            
+                            
+                            Text("Lock In")
+                                .font(.title2)
+                                .fontWeight(.medium)
+                                .multilineTextAlignment(.leading)
+                                .foregroundStyle(Color.white)
+                        }
+                    })
+                    .disabled(selectedIndex == nil)
+                }
+//            } else {
+//                Text("Quiz End")
+//            }
+            
+            
             
         }
+        .fullScreenCover(isPresented: $quizEnded, content: {
+            QuizEndView()
+                .environmentObject(nm)
+        })
         .onDisappear{
             qm.questionNumber = 0
         }
@@ -157,4 +184,5 @@ struct QuestionView: View {
 #Preview {
     QuestionView()
         .environmentObject(QuestionsManager())
+        .environmentObject(NavigationManager())
 }
