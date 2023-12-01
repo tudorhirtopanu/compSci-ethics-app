@@ -13,9 +13,15 @@ enum QuizSections:Int {
     case intellectualProperty = 2
 }
 
+enum QuizNavigation {
+    case quiz
+}
+
 struct QuizView: View {
     
     @StateObject var qm = QuestionsManager()
+    @EnvironmentObject var nm: NavigationManager
+    
     @State var section:QuizSections = .ethics
     @State private var selectedIndex:Int?
     
@@ -72,12 +78,17 @@ struct QuizView: View {
                     
                 }
                 
-                NavigationLink(destination: {
-                    QuestionView()
-                        .environmentObject(qm)
-                }, label: {
+                NavigationLink(value: QuizNavigation.quiz, label: {
                     Text("Go To Quiz")
                 })
+                .navigationDestination(for: QuizNavigation.self) { state in
+                    switch state {
+                    case .quiz:
+                        QuestionView()
+                            .environmentObject(qm)
+                            .environmentObject(nm)
+                    }
+                }
                 
             }.padding(.horizontal)
         }
