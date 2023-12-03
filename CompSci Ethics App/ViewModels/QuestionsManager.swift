@@ -23,6 +23,10 @@ class QuestionsManager:ObservableObject {
             }
         }
     
+    func returnSectionDetails(sectionId:Int) -> String {
+        return quiz[sectionId].title
+    }
+    
     func randomizeQuestions(section:Int) -> [Questions] {
         let randomizedQuestions = quiz[section].questions.shuffled()
         

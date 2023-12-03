@@ -40,6 +40,10 @@
 		8B29EEC02B168F18006F6EEE /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29EEBF2B168F18006F6EEE /* Questions.swift */; };
 		8B29EEC22B16918B006F6EEE /* QuestionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29EEC12B16918B006F6EEE /* QuestionsManager.swift */; };
 		8B29EEC72B17B207006F6EEE /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B29EEC62B17B207006F6EEE /* QuestionView.swift */; };
+		8B7A38052B1A8CB800F2DFB9 /* QuizEndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A38042B1A8CB800F2DFB9 /* QuizEndView.swift */; };
+		8B7A38072B1B482000F2DFB9 /* AnswerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A38062B1B482000F2DFB9 /* AnswerCard.swift */; };
+		8B7A38092B1B4B0700F2DFB9 /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A38082B1B4B0700F2DFB9 /* AnalyticsView.swift */; };
+		8B7A380B2B1B4B4D00F2DFB9 /* ModuleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A380A2B1B4B4D00F2DFB9 /* ModuleData.swift */; };
 		8BDA61742B0F762B00962DFE /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA61732B0F762B00962DFE /* NavigationManager.swift */; };
 		8BDA61762B0F7D7900962DFE /* IPBasics2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8BDA61752B0F7D7900962DFE /* IPBasics2.mov */; };
 		8BDA61782B0F7FCC00962DFE /* Legal.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BDA61772B0F7FCC00962DFE /* Legal.json */; };
@@ -52,6 +56,20 @@
 		8BDA618C2B121C8900962DFE /* DataProtectionAct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA618B2B121C8900962DFE /* DataProtectionAct.swift */; };
 		8BDA61902B121ECC00962DFE /* GDPRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA618F2B121ECC00962DFE /* GDPRView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		8B7A380C2B1B64A900F2DFB9 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		8B0CE9452B128BA3006D3650 /* DataSecurityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSecurityView.swift; sourceTree = "<group>"; };
@@ -88,6 +106,10 @@
 		8B29EEBF2B168F18006F6EEE /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		8B29EEC12B16918B006F6EEE /* QuestionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsManager.swift; sourceTree = "<group>"; };
 		8B29EEC62B17B207006F6EEE /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		8B7A38042B1A8CB800F2DFB9 /* QuizEndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizEndView.swift; sourceTree = "<group>"; };
+		8B7A38062B1B482000F2DFB9 /* AnswerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCard.swift; sourceTree = "<group>"; };
+		8B7A38082B1B4B0700F2DFB9 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
+		8B7A380A2B1B4B4D00F2DFB9 /* ModuleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleData.swift; sourceTree = "<group>"; };
 		8BDA61732B0F762B00962DFE /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		8BDA61752B0F7D7900962DFE /* IPBasics2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IPBasics2.mov; sourceTree = "<group>"; };
 		8BDA61772B0F7FCC00962DFE /* Legal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Legal.json; sourceTree = "<group>"; };
@@ -190,6 +212,7 @@
 			children = (
 				8B1454792B0C0542001AB56D /* LearnView.swift */,
 				8B14547B2B0C054D001AB56D /* QuizView.swift */,
+				8B7A38082B1B4B0700F2DFB9 /* AnalyticsView.swift */,
 				8B29EEC32B17B102006F6EEE /* Quiz */,
 				8B14547D2B0D426B001AB56D /* Learning */,
 				8B14548D2B0D4E65001AB56D /* ReusableViews */,
@@ -204,6 +227,7 @@
 				8BDA61792B0FB06D00962DFE /* LegalData.swift */,
 				8B1454922B0D5785001AB56D /* IntellectualPropertyData.swift */,
 				8B29EEBF2B168F18006F6EEE /* Questions.swift */,
+				8B7A380A2B1B4B4D00F2DFB9 /* ModuleData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				8B1454972B0E9879001AB56D /* RectangleCard.swift */,
+				8B7A38062B1B482000F2DFB9 /* AnswerCard.swift */,
 			);
 			path = ReusableViews;
 			sourceTree = "<group>";
@@ -304,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				8B29EEC62B17B207006F6EEE /* QuestionView.swift */,
+				8B7A38042B1A8CB800F2DFB9 /* QuizEndView.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -359,6 +385,7 @@
 				8B1454662B0BF75C001AB56D /* Resources */,
 			);
 			buildRules = (
+				8B7A380C2B1B64A900F2DFB9 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -426,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B29EEC22B16918B006F6EEE /* QuestionsManager.swift in Sources */,
+				8B7A38052B1A8CB800F2DFB9 /* QuizEndView.swift in Sources */,
 				8BDA617A2B0FB06D00962DFE /* LegalData.swift in Sources */,
 				8B0CE9462B128BA3006D3650 /* DataSecurityView.swift in Sources */,
 				8BDA61902B121ECC00962DFE /* GDPRView.swift in Sources */,
@@ -443,12 +471,14 @@
 				8BDA61812B12135A00962DFE /* ComputerMisuseAct1990.swift in Sources */,
 				8B14549B2B0E9D36001AB56D /* CopyrightView.swift in Sources */,
 				8B14547A2B0C0542001AB56D /* LearnView.swift in Sources */,
+				8B7A38092B1B4B0700F2DFB9 /* AnalyticsView.swift in Sources */,
 				8BDA618A2B121B9900962DFE /* DPALegislation.swift in Sources */,
 				8B1454812B0D4441001AB56D /* LegalView.swift in Sources */,
 				8BDA61742B0F762B00962DFE /* NavigationManager.swift in Sources */,
 				8B14549D2B0F4DD0001AB56D /* PatentsView.swift in Sources */,
 				8B29EEC02B168F18006F6EEE /* Questions.swift in Sources */,
 				8B0CE9482B1290D1006D3650 /* SecurityThreatsView.swift in Sources */,
+				8B7A38072B1B482000F2DFB9 /* AnswerCard.swift in Sources */,
 				8B29EEBC2B152585006F6EEE /* BrunelEthicsView.swift in Sources */,
 				8B1454982B0E9879001AB56D /* RectangleCard.swift in Sources */,
 				8B29EEC72B17B207006F6EEE /* QuestionView.swift in Sources */,
@@ -459,6 +489,7 @@
 				8B29EEB22B151C07006F6EEE /* EthicsData.swift in Sources */,
 				8B1454832B0D444F001AB56D /* IntellectualPropertyView.swift in Sources */,
 				8B29EEB02B151BF3006F6EEE /* EthicsManager.swift in Sources */,
+				8B7A380B2B1B4B4D00F2DFB9 /* ModuleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

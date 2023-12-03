@@ -7,7 +7,14 @@
 
 import SwiftUI
 
-
+struct CustomAnswerButton: ButtonStyle {
+    
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.99 : 1)
+    }
+    
+}
 
 struct QuestionView: View {
     
@@ -38,7 +45,7 @@ struct QuestionView: View {
             }
 
             Text(qm.chosenQuestions[qm.questionNumber].text)
-                .font(.title2)
+                .font(.title3)
                 .fontWeight(.medium)
                 .padding(.top, 10)
             
@@ -48,43 +55,54 @@ struct QuestionView: View {
             
             ForEach(qm.chosenQuestions[qm.questionNumber].answers.indices, id: \.self) { i in
                 
+                let correctIndex = qm.chosenQuestions[qm.questionNumber].answers.firstIndex(where: { $0.correct })
+                
                 Button(action: {
                     selectedIndex = i
+                    
+    
                 }, label: {
                     ZStack {
                         if hasSubmitted == false {
                             // Cards are white and selected one is grey
-                            RectangleCard(color: selectedIndex == i ? .gray : .white)
+                            AnswerCard(color: selectedIndex == i ? .gray : .white, opacity: selectedIndex == i ? 0.4 : 1)
                                 //.opacity(0.4)
                                 .frame(height: 90)
                         } else {
                             
                             // correct answer selected, make it green
                             if qm.chosenQuestions[qm.questionNumber].answers[selectedIndex ?? -1].correct == true {
-                             RectangleCard(color: selectedIndex == i ? .green : .white)
+                                AnswerCard(color: selectedIndex == i ? .green : .white, opacity: selectedIndex == i ? 0.7 : 1)
                                     .frame(height: 90)
                             } else {
                                 
                                 var cardColour:Color {
-                                    if selectedIndex == i {
+                                    if selectedIndex == i && qm.chosenQuestions[qm.questionNumber].answers[selectedIndex ?? -1].correct == false {
                                         return .red
-                                    } else {
+                                    } else if correctIndex == i {
+                                        return .green
+                                    }
+                                    else {
                                         return .white
                                     }
                                 }
                                 
-                                RectangleCard(color: cardColour)
+                                AnswerCard(color: cardColour, opacity: selectedIndex == i ? 0.85 : 1)
                                 .frame(height: 90)
                             }
                             
                         }
-                        // when locked in, make correct card green and wrong red
-                        Text(qm.chosenQuestions[qm.questionNumber].answers[i].text)
-                            .multilineTextAlignment(.leading)
-                            .foregroundStyle(Color.black)
+                        HStack {
+                            Text(qm.chosenQuestions[qm.questionNumber].answers[i].text)
+                                .multilineTextAlignment(.leading)
+                                .foregroundStyle(selectedIndex == i && hasSubmitted == true ? Color.black : Color.black)
+                            .padding(.horizontal)
+                            Spacer()
+                        }
                         
                     }
                 })
+                .buttonStyle(CustomAnswerButton())
                 .disabled(hasSubmitted)
                 
             }
@@ -172,7 +190,9 @@ struct QuestionView: View {
         .fullScreenCover(isPresented: $quizEnded, content: {
             QuizEndView()
                 .environmentObject(nm)
+                .environmentObject(qm)
         })
+        
         .onDisappear{
             qm.questionNumber = 0
         }
