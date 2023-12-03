@@ -36,6 +36,10 @@ struct QuestionView: View {
     var body: some View {
         
         VStack {
+            
+            Button(action: {print(qm.tempDictionaries)}, label: {
+                /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+            })
                                 
             HStack {
                 
@@ -195,6 +199,18 @@ struct QuestionView: View {
                 .environmentObject(nm)
                 .environmentObject(qm)
         })
+        .onAppear{
+            for q in qm.quiz[qm.section.rawValue].questions {
+                
+                let key = q.subjectTag
+                
+                while(qm.tempDictionaries.contains { $0.keys.contains(key) } == false){
+                    let key = q.subjectTag
+                        qm.tempDictionaries.append([key: 0])
+                    }
+                }
+                
+        }
         
         .onDisappear{
             qm.questionNumber = 0

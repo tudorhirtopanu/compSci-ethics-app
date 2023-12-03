@@ -23,6 +23,8 @@ class QuestionsManager:ObservableObject {
             }
         }
     
+    @Published var tempDictionaries:[[String:Int]] = []
+    
     func returnSectionDetails(sectionId:Int) -> String {
         return quiz[sectionId].title
     }
@@ -54,6 +56,10 @@ class QuestionsManager:ObservableObject {
     func checkAnswer(selectedIndex: Int, currentQuestion:Questions) -> String {
         let selectedAnswer = currentQuestion.answers[selectedIndex]
             return selectedAnswer.correct ? "Correct" : "Wrong"
+    }
+    
+    func clearDictionary() {
+        tempDictionaries = []
     }
     
 }
