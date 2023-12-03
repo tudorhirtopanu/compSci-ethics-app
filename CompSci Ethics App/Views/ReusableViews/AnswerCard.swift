@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct AnswerCard: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    
+    var color:Color
+    var opacity:Double
+    
+    var body: some View{
+    
+        Rectangle()
+            .foregroundColor(color)
+            .clipShape(.rect(cornerSize: CGSize(width: 10, height: 10)))
+            .shadow(radius: 3)
+            .opacity(opacity)
+    
     }
 }
 
 #Preview {
-    AnswerCard()
+    AnswerCard(color: .blue, opacity: 0.8)
+        .padding()
 }
