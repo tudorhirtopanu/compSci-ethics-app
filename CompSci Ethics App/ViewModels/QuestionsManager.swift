@@ -53,9 +53,9 @@ class QuestionsManager:ObservableObject {
         }
     }
     
-    func checkAnswer(selectedIndex: Int, currentQuestion:Questions) -> String {
+    func checkAnswer(selectedIndex: Int, currentQuestion:Questions) -> Bool {
         let selectedAnswer = currentQuestion.answers[selectedIndex]
-            return selectedAnswer.correct ? "Correct" : "Wrong"
+            return selectedAnswer.correct 
     }
     
     func clearDictionary() {
