@@ -29,6 +29,8 @@ struct QuestionView: View {
     @State var hasSubmitted:Bool = false
     
     @State var quizEnded:Bool = false
+    
+    @Bindable var moduleItem:ModuleData
         
     var body: some View {
         
@@ -160,7 +162,7 @@ struct QuestionView: View {
                             let result = qm.checkAnswer(selectedIndex: selectedIndex, currentQuestion: qm.chosenQuestions[qm.questionNumber])
                             
                             displayAnswer = result
-                            print(result)
+                            //print(result)
                         }
                         
                         hasSubmitted = true
@@ -188,7 +190,7 @@ struct QuestionView: View {
             
         }
         .fullScreenCover(isPresented: $quizEnded, content: {
-            QuizEndView()
+            QuizEndView(moduleItem: moduleItem)
                 .environmentObject(nm)
                 .environmentObject(qm)
         })
@@ -201,8 +203,8 @@ struct QuestionView: View {
     }
 }
 
-#Preview {
-    QuestionView()
-        .environmentObject(QuestionsManager())
-        .environmentObject(NavigationManager())
-}
+//#Preview {
+//    QuestionView()
+//        .environmentObject(QuestionsManager())
+//        .environmentObject(NavigationManager())
+//}

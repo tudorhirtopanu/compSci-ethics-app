@@ -28,6 +28,9 @@ struct QuizView: View {
     
     @Environment(\.modelContext) var context
     @Query(sort: \ModuleData.name) var item:[ModuleData]
+    @Query var items:[ModuleData]
+    
+    @State var itemToEdit:ModuleData?
     
     var body: some View {
         
@@ -46,6 +49,9 @@ struct QuizView: View {
                 VStack{
                     Button(action: {
                         qm.section = .ethics
+                        
+                        selectItemToEdit(sectionName: qm.quiz[QuizSections.ethics.rawValue].title)
+                        
                     }, label: {
                         ZStack {
                             RectangleCard(color: .blue)
@@ -58,6 +64,8 @@ struct QuizView: View {
                     
                     Button(action: {
                         qm.section = .legal
+                        
+                        selectItemToEdit(sectionName: qm.quiz[QuizSections.legal.rawValue].title)
                     }, label: {
                         ZStack {
                             RectangleCard(color: .blue)
@@ -70,6 +78,8 @@ struct QuizView: View {
                     
                     Button(action: {
                         qm.section = .intellectualProperty
+                        
+                        selectItemToEdit(sectionName: qm.quiz[QuizSections.intellectualProperty.rawValue].title)
                     }, label: {
                         ZStack {
                             RectangleCard(color: .blue)
@@ -88,8 +98,7 @@ struct QuizView: View {
                 .navigationDestination(for: QuizNavigation.self) { state in
                     switch state {
                     case .quiz:
-                        
-                        QuestionView()
+                        QuestionView(moduleItem: itemToEdit ?? createDataItem(sectionName: qm.quiz[section.rawValue].title))
                             .environmentObject(qm)
                             .environmentObject(nm)
                     }
@@ -105,6 +114,20 @@ struct QuizView: View {
         let items = ModuleData(name: "Test", totalQuestions: 12)
         
         context.insert(items)
+        
+    }
+    
+    private func selectItemToEdit(sectionName:String) {
+        
+        if let item = items.first(where: {$0.name == sectionName}){
+            itemToEdit = item
+        }
+        
+    }
+    
+    private func createDataItem(sectionName:String) -> ModuleData {
+        
+        return ModuleData(name: sectionName, totalQuestions: 0)
         
     }
     

@@ -14,7 +14,7 @@ struct QuizEndView: View {
     @EnvironmentObject var qm:QuestionsManager
     @Environment(\.modelContext) var context
     
-    
+    @Bindable var moduleItem:ModuleData
             
     var body: some View {
         VStack {
@@ -38,8 +38,12 @@ struct QuizEndView: View {
         
         //let object = items.first(where: items.)
         
+        let previousTotal = moduleItem.totalQuestions
+        
+        let newTotal = previousTotal + qm.quiz[qm.section.rawValue].questions.count
+        
         //let newQuestions = questionNum + qm.quiz[qm.section.rawValue].questions.count
-        let item = ModuleData(name: qm.returnSectionDetails(sectionId: qm.section.rawValue), totalQuestions: qm.quiz[qm.section.rawValue].questions.count)
+        let item = ModuleData(name: qm.returnSectionDetails(sectionId: qm.section.rawValue), totalQuestions: newTotal)
         
         context.insert(item)
         
