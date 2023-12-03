@@ -147,6 +147,198 @@
                 ],
                 "sectionTag":"Ethics",
                 "subjectTag":"Ethics in the real world"
+            },
+            {
+                "id":"ethics_7",
+                "text":"'Working together to address issues in your profession and in wider society, you want everyone to have access to IT. You share what you know, uphold standards and conduct yourself professionally and fairly at all times.' is what part of the BCS",
+                "answers": [
+                    {
+                        "text": "The Public Interest",
+                        "correct": true
+                    },
+                    {
+                        "text": "Duty to Relevant Authority",
+                        "correct": false
+                    },
+                    {
+                        "text": "Professional Competence and Integrity",
+                        "correct": false
+                    },
+                    {
+                        "text": "None",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Ethics",
+                "subjectTag":"BCS Code of Conduct"
+            },
+            {
+                "id":"ethics_8",
+                "text":"'You have integrity and show competence, but you know you don’t know everything, that’s why you continuously learn and grow and never take on tasks that you don’t have the skills and resources to complete.' is what part of the BCS",
+                "answers": [
+                    {
+                        "text": "The Public Interest",
+                        "correct": false
+                    },
+                    {
+                        "text": "Duty to Relevant Authority",
+                        "correct": false
+                    },
+                    {
+                        "text": "Professional Competence and Integrity",
+                        "correct": true
+                    },
+                    {
+                        "text": "None",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Ethics",
+                "subjectTag":"BCS Code of Conduct"
+            },
+            {
+                "id":"ethics_9",
+                "text":"'You work with due care and diligence, acting in your client or company’s best interests at all times. You take personal and collective responsibility for your actions while maintaining discretion and ethical standards' is what part of the BCS",
+                "answers": [
+                    {
+                        "text": "Professional Competence and Integrity",
+                        "correct": false
+                    },
+                    {
+                        "text": "Duty to Relevant Authority",
+                        "correct": true
+                    },
+                    {
+                        "text": "Duty to the Profession",
+                        "correct": false
+                    },
+                    {
+                        "text": "None",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Ethics",
+                "subjectTag":"BCS Code of Conduct"
+            },
+            {
+                "id":"ethics_10",
+                "text":"'As a BCS member, you’re an ambassador for the IT industry and use your voice to help promote it positively to the world. You support your IT colleagues and other members in their growth both personally and professionally.' is what part of the BCS",
+                "answers": [
+                    {
+                        "text": "The Public Interest",
+                        "correct": false
+                    },
+                    {
+                        "text": "Duty to Relevant Authority",
+                        "correct": false
+                    },
+                    {
+                        "text": "Duty to the Profession",
+                        "correct": true
+                    },
+                    {
+                        "text": "None",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Ethics",
+                "subjectTag":"BCS Code of Conduct"
+            },
+            {
+                "id":"ethics_11",
+                "text":"'Explore and master emerging technologies to stay at the forefront of innovation. Actively contribute to the evolution of the IT landscape while upholding ethical standards and fostering collaboration within the industry.' is what part of the BCS",
+                "answers": [
+                    {
+                        "text": "The Public Interest",
+                        "correct": false
+                    },
+                    {
+                        "text": "Duty to Relevant Authority",
+                        "correct": false
+                    },
+                    {
+                        "text": "Duty to the Profession",
+                        "correct": false
+                    },
+                    {
+                        "text": "None",
+                        "correct": true
+                    }
+                ],
+                "sectionTag":"Ethics",
+                "subjectTag":"BCS Code of Conduct"
+            },
+            {
+                "id":"ethics_12",
+                "text":"'Whenever possible, the investigator should inform all participants of the objectives of the investigation. The investigator should inform the participants of all aspects of the research or intervention that might reasonably be expected to influence willingness to participate. ' is what part of the BPS",
+                "answers": [
+                    {
+                        "text": "Consent",
+                        "correct": true
+                    },
+                    {
+                        "text": "Withdrawal",
+                        "correct": false
+                    },
+                    {
+                        "text": "Confidentiality",
+                        "correct": false
+                    },
+                    {
+                        "text": "None",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Ethics",
+                "subjectTag":"BCS Code of Conduct"
+            },
+            {
+                "id":"ethics_13",
+                "text":"'At the onset of the investigation investigators should make plain to participants their right to withdraw from the research at any time, irrespective of whether or not payment or other inducement has been offered ' is what part of the BPS",
+                "answers": [
+                    {
+                        "text": "Consent",
+                        "correct": false
+                    },
+                    {
+                        "text": "Withdrawal",
+                        "correct": true
+                    },
+                    {
+                        "text": "Confidentiality",
+                        "correct": false
+                    },
+                    {
+                        "text": "None",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Ethics",
+                "subjectTag":"BCS Code of Conduct"
+            },
+            {
+                "id":"ethics_14",
+                "text":"'information obtained about a participant during an investigation is confidential unless otherwise agreed in advance. Participants have a right to expect that information they provide will be treated confidentially will not be identifiable as theirs ' is what part of the BPS",
+                "answers": [
+                    {
+                        "text": "Consent",
+                        "correct": false
+                    },
+                    {
+                        "text": "Withdrawal",
+                        "correct": false
+                    },
+                    {
+                        "text": "Confidentiality",
+                        "correct": true
+                    },
+                    {
+                        "text": "None",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Ethics",
+                "subjectTag":"BCS Code of Conduct"
             }
         ]
     },
@@ -345,6 +537,294 @@
                 ],
                 "sectionTag":"Legal",
                 "subjectTag":"Computer Software Crime"
+            },
+            {
+                "id":"legal_9",
+                "text":"________ is spyware that logs and transmits everything a user types.",
+                "answers": [
+                    {
+                        "text": "Keyware",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keylogger",
+                        "correct": true
+                    },
+                    {
+                        "text": "A Worm",
+                        "correct": false
+                    },
+                    {
+                        "text": "A Trojan Horse",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Software Crime"
+            },
+            {
+                "id":"legal_10",
+                "text":"________ is malware that hijacks a user's computer and demands payment in return for giving back access.",
+                "answers": [
+                    {
+                        "text": "Ransomware",
+                        "correct": true
+                    },
+                    {
+                        "text": "A Trojan Horse",
+                        "correct": false
+                    },
+                    {
+                        "text": "A Virus",
+                        "correct": false
+                    },
+                    {
+                        "text": "Spyware",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Software Crime"
+            },
+            {
+                "id":"legal_11",
+                "text":"An employee clicks on a link in an email from what looks like a fellow employee and is taken to a fraudulent website which asks for personal information is an example of:",
+                "answers": [
+                    {
+                        "text": "Identity Theft",
+                        "correct": false
+                    },
+                    {
+                        "text": "DDOS Attack",
+                        "correct": false
+                    },
+                    {
+                        "text": "Spear Phishing",
+                        "correct": true
+                    },
+                    {
+                        "text": "Pharming",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Software Crime"
+            },
+            {
+                "id":"legal_12",
+                "text":"An employee clicks on a link in an email from what looks like a fellow employee and is taken to a fraudulent website which asks for personal information is an example of:",
+                "answers": [
+                    {
+                        "text": "Passwords can be stolen through social engineering.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Authentication cannot be established by the use of a password.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Password systems that are too rigorous may hinder employee productivity.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Passwords can be sniffed when being transmitted over a network.",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Security"
+            },
+            {
+                "id":"legal_13",
+                "text":"An authentication system in which a user must provide two types of identification, such as a bank card and PIN, is called:",
+                "answers": [
+                    {
+                        "text": "Token Authentication.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Symmetric key Authorization",
+                        "correct": false
+                    },
+                    {
+                        "text": "Two Factor Authentication",
+                        "correct": true
+                    },
+                    {
+                        "text": "Biometric authentication",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Security"
+            },
+            {
+                "id":"legal_14",
+                "text":"When hackers gain access to a database containing your personal private information, this is an example of:",
+                "answers": [
+                    {
+                        "text": "Pharming.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Identity Theft",
+                        "correct": true
+                    },
+                    {
+                        "text": "Spoofing",
+                        "correct": false
+                    },
+                    {
+                        "text": "Social Engineering",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Software Crime"
+            },
+            {
+                "id":"legal_15",
+                "text":"A firewall allows the organization to:",
+                "answers": [
+                    {
+                        "text": "create access rules for a network.",
+                        "correct": false
+                    },
+                    {
+                        "text": "check the accuracy of all transactions between its network and the Internet.",
+                        "correct": false
+                    },
+                    {
+                        "text": "prevent unauthorized communication into and out of its network.",
+                        "correct": true
+                    },
+                    {
+                        "text": "check the content of all incoming and outgoing email messages.",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Security"
+            },
+            {
+                "id":"legal_16",
+                "text":"In which method of encryption is a single encryption key sent to the receiver so both sender and receiver share the same key?",
+                "answers": [
+                    {
+                        "text": "Public key encryption",
+                        "correct": false
+                    },
+                    {
+                        "text": "Private key encryption",
+                        "correct": false
+                    },
+                    {
+                        "text": "Distributed key encryption",
+                        "correct": false
+                    },
+                    {
+                        "text": "Symmetric key encryption",
+                        "correct": true
+                    }
+                ],
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Security"
+            },
+            {
+                "id":"legal_17",
+                "text":"Using numerous computers to flood and overwhelm the network from numerous launch points is called aNo ________ attack.",
+                "answers": [
+                    {
+                        "text": "Phishing",
+                        "correct": false
+                    },
+                    {
+                        "text": "DoS (Denial of Service)",
+                        "correct": false
+                    },
+                    {
+                        "text": "DDoS (Distributed Denial of Service)",
+                        "correct": true
+                    },
+                    {
+                        "text": "SQL injection",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Software Crime"
+            },
+            {
+                "id":"legal_18",
+                "text":"Pharming involves:",
+                "answers": [
+                    {
+                        "text": "redirecting users to a fraudulent website even when the user has typed in the correct address in the web browser.",
+                        "correct": true
+                    },
+                    {
+                        "text": "setting up fake website to ask users for confidential information.",
+                        "correct": false
+                    },
+                    {
+                        "text": "pretending to be a legitimate business's representative in order to garner information about a security system.",
+                        "correct": false
+                    },
+                    {
+                        "text": "setting up fake Wi-Fi access points that look as if they are legitimate public networks.",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Software Crime"
+            },
+            {
+                "id":"legal_19",
+                "text":"Which of the following statements about Internet security vulnerabilities is not true?",
+                "answers": [
+                    {
+                        "text": "Instant messaging can provide hackers access to an otherwise secure network.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Employees can pose a security threat.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Large public networks, such as the Internet, are less vulnerable than internal networks.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Email attachments can serve as a springboard for malicious software.",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Security"
+            },
+            {
+                "id":"legal_20",
+                "text":"Evil twins are:",
+                "answers": [
+                    {
+                        "text": "fake wireless network access points that look legitimate to users.",
+                        "correct": true
+                    },
+                    {
+                        "text": "computers that fraudulently access a website or network using the IP address and identification of an authorized computer.",
+                        "correct": false
+                    },
+                    {
+                        "text": "email messages that mimic the email messages of a legitimate business.",
+                        "correct": false
+                    },
+                    {
+                        "text": "fraudulent websites that mimic a legitimate business's website.",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Legal",
+                "subjectTag":"Computer Security"
             }
         ]
     },
