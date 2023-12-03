@@ -34,15 +34,55 @@ struct QuizEndView: View {
         
     }
     
+    private func mergeDictionaries(oldDict:[[String:Int]], newDict:[[String:Int]]) -> [[String:Int]] {
+        
+        var updatedSectionCorrectAnswers = oldDict
+        
+        // Merge dictionaries in updatedSectionCorrectAnswers and qm.subjectCorrectAnswers
+        for subjectCorrectAnswers in newDict {
+            for (key, value) in subjectCorrectAnswers {
+                if let existingIndex = updatedSectionCorrectAnswers.firstIndex(where: { $0.keys.contains(key) }),
+                   let existingValue = updatedSectionCorrectAnswers[existingIndex][key] {
+                    updatedSectionCorrectAnswers[existingIndex][key] = existingValue + value
+                } else {
+                    // If the key doesn't exist, add a new dictionary to updatedSectionCorrectAnswers
+                    updatedSectionCorrectAnswers.append([key: value])
+                }
+            }
+        }
+        
+        return updatedSectionCorrectAnswers
+        
+    }
+    
     private func addItem() {
         
         //let object = items.first(where: items.)
         
         let previousTotal = moduleItem.totalQuestions
-        
         let newTotal = previousTotal + qm.quiz[qm.section.rawValue].questions.count
         
-        let item = ModuleData(name: qm.returnSectionDetails(sectionId: qm.section.rawValue), totalQuestions: newTotal, sectionTotalQuestions: qm.subjectTotalQuestions, sectionCorrectAnswers: qm.subjectCorrectAnswers)
+//        var updatedSectionCorrectAnswers = moduleItem.sectionCorrectAnswers
+//           
+//           // Merge dictionaries in updatedSectionCorrectAnswers and qm.subjectCorrectAnswers
+//           for subjectCorrectAnswers in qm.subjectCorrectAnswers {
+//               for (key, value) in subjectCorrectAnswers {
+//                   if let existingIndex = updatedSectionCorrectAnswers.firstIndex(where: { $0.keys.contains(key) }),
+//                      let existingValue = updatedSectionCorrectAnswers[existingIndex][key] {
+//                       updatedSectionCorrectAnswers[existingIndex][key] = existingValue + value
+//                   } else {
+//                       // If the key doesn't exist, add a new dictionary to updatedSectionCorrectAnswers
+//                       updatedSectionCorrectAnswers.append([key: value])
+//                   }
+//               }
+//           }
+        
+        let correctAnswers = mergeDictionaries(oldDict: moduleItem.sectionCorrectAnswers, newDict: qm.subjectCorrectAnswers)
+        let totalQuestions = mergeDictionaries(oldDict: moduleItem.sectionTotalQuestions, newDict: qm.subjectTotalQuestions)
+        
+        print(totalQuestions)
+        
+        let item = ModuleData(name: qm.returnSectionDetails(sectionId: qm.section.rawValue), totalQuestions: newTotal, sectionTotalQuestions: totalQuestions, sectionCorrectAnswers: correctAnswers)
         
         context.insert(item)
         

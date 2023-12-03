@@ -21,6 +21,15 @@ struct AnalyticsView: View {
                     VStack{
                         Text(i.name)
                         Text(String(i.totalQuestions))
+                        
+                        ForEach(i.sectionTotalQuestions, id: \.self) { topic in
+                                        HStack {
+                                            ForEach(topic.sorted(by: <), id: \.key) { key, value in
+                                                Text("\(key): \(value)")
+                                            }
+                                        }
+                                    }
+                        
                     }
                 }.onDelete(perform: deleteItem)
             }
