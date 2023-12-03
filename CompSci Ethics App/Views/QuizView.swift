@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 enum QuizSections:Int {
     case ethics = 0
@@ -24,6 +25,9 @@ struct QuizView: View {
     
     @State var section:QuizSections = .ethics
     @State private var selectedIndex:Int?
+    
+    @Environment(\.modelContext) var context
+    @Query(sort: \ModuleData.name) var item:[ModuleData]
     
     var body: some View {
         
@@ -84,6 +88,7 @@ struct QuizView: View {
                 .navigationDestination(for: QuizNavigation.self) { state in
                     switch state {
                     case .quiz:
+                        
                         QuestionView()
                             .environmentObject(qm)
                             .environmentObject(nm)
@@ -94,6 +99,15 @@ struct QuizView: View {
         }
         
     }
+    
+    private func addItems() {
+        
+        let items = ModuleData(name: "Test", totalQuestions: 12)
+        
+        context.insert(items)
+        
+    }
+    
 }
 
 #Preview {
