@@ -21,4 +21,8 @@ class ModuleData: Identifiable {
         self.totalQuestions = totalQuestions
     }
     
+    static func example() -> ModuleData {
+        return ModuleData(name: "Ethics", totalQuestions: 32)
+    }
+    
 }
