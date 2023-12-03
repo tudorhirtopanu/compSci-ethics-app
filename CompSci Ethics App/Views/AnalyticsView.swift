@@ -54,4 +54,5 @@ struct AnalyticsView: View {
 
 #Preview {
     AnalyticsView()
+        .modelContainer(previewContainer)
 }
