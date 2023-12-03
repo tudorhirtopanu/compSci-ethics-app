@@ -125,9 +125,36 @@ struct QuizView: View {
         
     }
     
+    private func createDictionariesFromStrings(strings: [String]) -> [[String: Int]] {
+        var dictionaries: [[String: Int]] = []
+
+        for string in strings {
+            let dictionary = [string: 0]
+            dictionaries.append(dictionary)
+        }
+
+        return dictionaries
+    }
+    
     private func createDataItem(sectionName:String) -> ModuleData {
         
-        return ModuleData(name: sectionName, totalQuestions: 0, sectionTotalQuestions: [["S1":30],["S2":24]], sectionCorrectAnswers: [["S1":20],["S2":18]])
+        // Get The Subjects
+        
+        var subjects:[String] = []
+        
+        for s in qm.quiz[section.rawValue].questions {
+            
+            while(subjects.contains(s.subjectTag) == false){
+                subjects.append(s.subjectTag)
+            }
+            
+            
+        }
+        
+        // Initialize 0 for each key
+        var arrayOfDictionaries = createDictionariesFromStrings(strings: subjects)
+        
+        return ModuleData(name: sectionName, totalQuestions: 0, sectionTotalQuestions: arrayOfDictionaries, sectionCorrectAnswers: arrayOfDictionaries)
         
     }
     

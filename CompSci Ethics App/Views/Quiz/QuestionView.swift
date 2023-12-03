@@ -37,8 +37,12 @@ struct QuestionView: View {
         
         VStack {
             
-            Button(action: {print(qm.tempDictionaries)}, label: {
-                /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+            Button(action: {
+                print("Correct Answer dictionary \(qm.subjectCorrectAnswers)")
+                
+                print("Total Questions dictionary \(qm.subjectTotalQuestions)")
+            }, label: {
+                Text("Print dictionaries")
             })
                                 
             HStack {
@@ -167,8 +171,10 @@ struct QuestionView: View {
                             let result = qm.checkAnswer(selectedIndex: selectedIndex, currentQuestion: qm.chosenQuestions[qm.questionNumber])
                             
                             if result {
-                                increaseNumberForKey(qm.chosenQuestions[qm.questionNumber].subjectTag)
+                                qm.increaseNumberForKey(qm.chosenQuestions[qm.questionNumber].subjectTag, dictionaryArray: &qm.subjectCorrectAnswers)
                             }
+                            
+                            qm.increaseNumberForKey(qm.chosenQuestions[qm.questionNumber].subjectTag, dictionaryArray: &qm.subjectTotalQuestions)
                             
                             displayAnswer = result ? "Correct" : "Wrong"
                             //print(result)
@@ -204,15 +210,21 @@ struct QuestionView: View {
                 .environmentObject(qm)
         })
         .onAppear{
-            for q in qm.quiz[qm.section.rawValue].questions {
-                
-                let key = q.subjectTag
-                
-                while(qm.tempDictionaries.contains { $0.keys.contains(key) } == false){
-                    let key = q.subjectTag
-                        qm.tempDictionaries.append([key: 0])
-                    }
-                }
+//            for q in qm.quiz[qm.section.rawValue].questions {
+//                
+//                let key = q.subjectTag
+//                
+//                while(qm.subjectCorrectAnswers.contains { $0.keys.contains(key) } == false){
+//                    let key = q.subjectTag
+//                        qm.subjectCorrectAnswers.append([key: 0])
+//                    }
+//                }
+            
+            // For Correct Answers
+            qm.createArrayOfSectionDictionaries(questions: qm.quiz[qm.section.rawValue].questions, dictionaryArray: &qm.subjectCorrectAnswers)
+            
+            // For Total Questions
+            qm.createArrayOfSectionDictionaries(questions: qm.quiz[qm.section.rawValue].questions, dictionaryArray: &qm.subjectTotalQuestions)
                 
         }
         
@@ -221,28 +233,6 @@ struct QuestionView: View {
         }
         .padding(.horizontal)
         
-    }
-    
-    private func increaseNumberForKey(_ key: String) {
-        if let index = qm.tempDictionaries.firstIndex(where: { $0.keys.contains(key) }) {
-            
-            // If the key is found in tempDictionaries
-            var dictionary = qm.tempDictionaries[index]
-            
-            // Update the value associated with the key
-            if let currentValue = dictionary[key] {
-                dictionary[key] = currentValue + 1
-            } else {
-                // If the key exists but doesn't have a value, set it to 1
-                dictionary[key] = 1
-            }
-            
-            // Update the array at the found index
-            qm.tempDictionaries[index] = dictionary
-        } else {
-            // If the key is not found, add a new entry with the key and value 1
-            qm.tempDictionaries.append([key: 1])
-        }
     }
     
 }

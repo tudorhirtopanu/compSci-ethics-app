@@ -42,8 +42,7 @@ struct QuizEndView: View {
         
         let newTotal = previousTotal + qm.quiz[qm.section.rawValue].questions.count
         
-        //TODO: Change this so actual section data is passed in
-        let item = ModuleData(name: qm.returnSectionDetails(sectionId: qm.section.rawValue), totalQuestions: newTotal, sectionTotalQuestions: [["S1":30],["S2":24]], sectionCorrectAnswers: [["S1":20],["S2":18]])
+        let item = ModuleData(name: qm.returnSectionDetails(sectionId: qm.section.rawValue), totalQuestions: newTotal, sectionTotalQuestions: qm.subjectTotalQuestions, sectionCorrectAnswers: qm.subjectCorrectAnswers)
         
         context.insert(item)
         

@@ -23,7 +23,8 @@ class QuestionsManager:ObservableObject {
             }
         }
     
-    @Published var tempDictionaries:[[String:Int]] = []
+    @Published var subjectCorrectAnswers:[[String:Int]] = []
+    @Published var subjectTotalQuestions:[[String:Int]] = []
     
     func returnSectionDetails(sectionId:Int) -> String {
         return quiz[sectionId].title
@@ -59,7 +60,41 @@ class QuestionsManager:ObservableObject {
     }
     
     func clearDictionary() {
-        tempDictionaries = []
+        subjectCorrectAnswers = []
+    }
+    
+    func createArrayOfSectionDictionaries(questions:[Questions], dictionaryArray:inout [[String:Int]]) {
+        for q in questions {
+            
+            let key = q.subjectTag
+            
+            while(dictionaryArray.contains { $0.keys.contains(key) } == false){
+                let key = q.subjectTag
+                    dictionaryArray.append([key: 0])
+                }
+            }
+    }
+    
+    func increaseNumberForKey(_ key: String, dictionaryArray:inout [[String:Int]]) {
+        if let index = dictionaryArray.firstIndex(where: { $0.keys.contains(key) }) {
+            
+            // If the key is found in tempDictionaries
+            var dictionary = dictionaryArray[index]
+            
+            // Update the value associated with the key
+            if let currentValue = dictionary[key] {
+                dictionary[key] = currentValue + 1
+            } else {
+                // If the key exists but doesn't have a value, set it to 1
+                dictionary[key] = 1
+            }
+            
+            // Update the array at the found index
+            dictionaryArray[index] = dictionary
+        } else {
+            // If the key is not found, add a new entry with the key and value 1
+            dictionaryArray.append([key: 1])
+        }
     }
     
 }
