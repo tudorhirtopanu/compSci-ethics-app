@@ -5,6 +5,7 @@
 //  Created by Tudor Hirtopanu on 29/11/2023.
 //
 
+import SwiftData
 import SwiftUI
 
 struct CustomAnswerButton: ButtonStyle {
@@ -203,8 +204,19 @@ struct QuestionView: View {
     }
 }
 
-//#Preview {
-//    QuestionView()
-//        .environmentObject(QuestionsManager())
-//        .environmentObject(NavigationManager())
-//}
+#Preview {
+    do{
+        
+        let config = ModelConfiguration(isStoredInMemoryOnly: true)
+        
+        let container = try ModelContainer(for: ModuleData.self, configurations: config)
+        let example = ModuleData(name: "Ethics", totalQuestions: 43)
+        
+        return QuestionView(moduleItem: example)
+            .environmentObject(QuestionsManager())
+            .environmentObject(NavigationManager())
+            .modelContainer(container)
+    } catch {
+        fatalError("Failed to create model container")
+    }
+}

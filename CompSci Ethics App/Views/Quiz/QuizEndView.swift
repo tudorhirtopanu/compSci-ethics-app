@@ -51,7 +51,18 @@ struct QuizEndView: View {
     
 }
 
-//#Preview {
-//    QuizEndView()
-//        .environmentObject(NavigationManager())
-//}
+#Preview {
+    do{
+        
+        let config = ModelConfiguration(isStoredInMemoryOnly: true)
+        
+        let container = try ModelContainer(for: ModuleData.self, configurations: config)
+        let example = ModuleData(name: "Ethics", totalQuestions: 43)
+        
+        return QuizEndView(moduleItem: example)
+            .environmentObject(NavigationManager())
+    } catch {
+        fatalError("Failed to create model container")
+    }
+    
+}
