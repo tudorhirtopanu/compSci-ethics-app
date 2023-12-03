@@ -25,6 +25,11 @@ struct RootView: View {
                     .tabItem {
                         Label("Quiz", systemImage: "graduationcap.fill")
                     }
+                
+                AnalyticsView()
+                    .tabItem {
+                        Label("Analytics", systemImage: "chart.bar.fill")
+                    }
             }
         }
     }
