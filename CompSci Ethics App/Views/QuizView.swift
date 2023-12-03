@@ -23,7 +23,7 @@ struct QuizView: View {
     @StateObject var qm = QuestionsManager()
     @EnvironmentObject var nm: NavigationManager
     
-    @State var section:QuizSections = .ethics
+    //@State var section:QuizSections = .ethics
     @State private var selectedIndex:Int?
     
     @Environment(\.modelContext) var context
@@ -39,12 +39,12 @@ struct QuizView: View {
                 
                 Text("Select a Section")
                 
-                Picker("Section", selection: $qm.section){
-                    Text("Ethics").tag(QuizSections.ethics)
-                    Text("Legal").tag(QuizSections.legal)
-                    Text("Intellectual Property").tag(QuizSections.intellectualProperty)
-                }
-                .pickerStyle(.segmented)
+//                Picker("Section", selection: $qm.section){
+//                    Text("Ethics").tag(QuizSections.ethics)
+//                    Text("Legal").tag(QuizSections.legal)
+//                    Text("Intellectual Property").tag(QuizSections.intellectualProperty)
+//                }
+//                .pickerStyle(.segmented)
                 
                 VStack{
                     Button(action: {
@@ -98,13 +98,14 @@ struct QuizView: View {
                 .navigationDestination(for: QuizNavigation.self) { state in
                     switch state {
                     case .quiz:
-                        QuestionView(moduleItem: itemToEdit ?? createDataItem(sectionName: qm.quiz[section.rawValue].title))
+                        QuestionView(moduleItem: itemToEdit ?? createDataItem(sectionName: qm.quiz[qm.section.rawValue].title))
                             .environmentObject(qm)
                             .environmentObject(nm)
                     }
                 }
                 
-            }.padding(.horizontal)
+            }
+            .padding(.horizontal)
         }
         
     }
@@ -139,20 +140,26 @@ struct QuizView: View {
     private func createDataItem(sectionName:String) -> ModuleData {
         
         // Get The Subjects
-        
+        let currentSection = qm.section
         var subjects:[String] = []
         
-        for s in qm.quiz[section.rawValue].questions {
+        for s in qm.quiz[currentSection.rawValue].questions {
             
-            while(subjects.contains(s.subjectTag) == false){
+            while(!subjects.contains(s.subjectTag)){
                 subjects.append(s.subjectTag)
             }
             
             
         }
         
+        subjects = subjects.filter { subjectTag in
+            return qm.quiz[qm.section.rawValue].questions.contains { $0.subjectTag == subjectTag }
+        }
+        
         // Initialize 0 for each key
         var arrayOfDictionaries = createDictionariesFromStrings(strings: subjects)
+        
+        //print(arrayOfDictionaries)
         
         return ModuleData(name: sectionName, totalQuestions: 0, sectionTotalQuestions: arrayOfDictionaries, sectionCorrectAnswers: arrayOfDictionaries)
         

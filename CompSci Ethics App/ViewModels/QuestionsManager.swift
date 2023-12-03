@@ -60,7 +60,8 @@ class QuestionsManager:ObservableObject {
     }
     
     func clearDictionary() {
-        subjectCorrectAnswers = []
+        subjectCorrectAnswers.removeAll()
+        subjectTotalQuestions.removeAll()
     }
     
     func createArrayOfSectionDictionaries(questions:[Questions], dictionaryArray:inout [[String:Int]]) {

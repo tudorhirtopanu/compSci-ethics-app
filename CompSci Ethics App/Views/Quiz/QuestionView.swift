@@ -32,6 +32,7 @@ struct QuestionView: View {
     @State var quizEnded:Bool = false
     
     @Bindable var moduleItem:ModuleData
+    
         
     var body: some View {
         
@@ -230,6 +231,7 @@ struct QuestionView: View {
         
         .onDisappear{
             qm.questionNumber = 0
+            qm.clearDictionary()
         }
         .padding(.horizontal)
         

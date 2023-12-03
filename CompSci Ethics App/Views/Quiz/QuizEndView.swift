@@ -29,6 +29,9 @@ struct QuizEndView: View {
         .onAppear{
             addItem()
         }
+        .onDisappear {
+            qm.clearDictionary()
+        }
         
         
         
@@ -46,7 +49,7 @@ struct QuizEndView: View {
                     updatedSectionCorrectAnswers[existingIndex][key] = existingValue + value
                 } else {
                     // If the key doesn't exist, add a new dictionary to updatedSectionCorrectAnswers
-                    updatedSectionCorrectAnswers.append([key: value])
+                    //updatedSectionCorrectAnswers.append([key: value])
                 }
             }
         }
@@ -62,6 +65,7 @@ struct QuizEndView: View {
         let previousTotal = moduleItem.totalQuestions
         let newTotal = previousTotal + qm.quiz[qm.section.rawValue].questions.count
         
+  /*
 //        var updatedSectionCorrectAnswers = moduleItem.sectionCorrectAnswers
 //           
 //           // Merge dictionaries in updatedSectionCorrectAnswers and qm.subjectCorrectAnswers
@@ -76,10 +80,12 @@ struct QuizEndView: View {
 //                   }
 //               }
 //           }
+   */
         
         let correctAnswers = mergeDictionaries(oldDict: moduleItem.sectionCorrectAnswers, newDict: qm.subjectCorrectAnswers)
         let totalQuestions = mergeDictionaries(oldDict: moduleItem.sectionTotalQuestions, newDict: qm.subjectTotalQuestions)
         
+        print(qm.subjectTotalQuestions)
         print(totalQuestions)
         
         let item = ModuleData(name: qm.returnSectionDetails(sectionId: qm.section.rawValue), totalQuestions: newTotal, sectionTotalQuestions: totalQuestions, sectionCorrectAnswers: correctAnswers)
