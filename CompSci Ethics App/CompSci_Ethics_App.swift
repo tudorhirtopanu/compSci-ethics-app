@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct CompSci_Ethics_App: App {
     var body: some Scene {
         WindowGroup {
             RootView()
-        }
+        }.modelContainer(for: ModuleData.self)
     }
 }
