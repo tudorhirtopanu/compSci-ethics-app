@@ -111,7 +111,7 @@ struct QuizView: View {
     
     private func addItems() {
         
-        let items = ModuleData(name: "Test", totalQuestions: 12)
+        let items = ModuleData(name: "Test", totalQuestions: 12, sectionTotalQuestions: [["S1":30],["S2":24]], sectionCorrectAnswers: [["S1":20],["S2":18]])
         
         context.insert(items)
         
@@ -127,7 +127,7 @@ struct QuizView: View {
     
     private func createDataItem(sectionName:String) -> ModuleData {
         
-        return ModuleData(name: sectionName, totalQuestions: 0)
+        return ModuleData(name: sectionName, totalQuestions: 0, sectionTotalQuestions: [["S1":30],["S2":24]], sectionCorrectAnswers: [["S1":20],["S2":18]])
         
     }
     

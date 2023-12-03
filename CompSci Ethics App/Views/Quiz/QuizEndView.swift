@@ -42,8 +42,8 @@ struct QuizEndView: View {
         
         let newTotal = previousTotal + qm.quiz[qm.section.rawValue].questions.count
         
-        //let newQuestions = questionNum + qm.quiz[qm.section.rawValue].questions.count
-        let item = ModuleData(name: qm.returnSectionDetails(sectionId: qm.section.rawValue), totalQuestions: newTotal)
+        //TODO: Change this so actual section data is passed in
+        let item = ModuleData(name: qm.returnSectionDetails(sectionId: qm.section.rawValue), totalQuestions: newTotal, sectionTotalQuestions: [["S1":30],["S2":24]], sectionCorrectAnswers: [["S1":20],["S2":18]])
         
         context.insert(item)
         
@@ -57,7 +57,7 @@ struct QuizEndView: View {
         let config = ModelConfiguration(isStoredInMemoryOnly: true)
         
         let container = try ModelContainer(for: ModuleData.self, configurations: config)
-        let example = ModuleData(name: "Ethics", totalQuestions: 43)
+        let example = ModuleData(name: "Ethics", totalQuestions: 43, sectionTotalQuestions: [["S1":30],["S2":24]], sectionCorrectAnswers: [["S1":20],["S2":18]])
         
         return QuizEndView(moduleItem: example)
             .environmentObject(NavigationManager())

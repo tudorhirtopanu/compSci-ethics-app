@@ -37,7 +37,7 @@ struct AnalyticsView: View {
     
     func addSample() {
         
-        let module = ModuleData(name: "Test Data ", totalQuestions: 14)
+        let module = ModuleData(name: "Test Data ", totalQuestions: 14, sectionTotalQuestions: [["S1":30],["S2":24]], sectionCorrectAnswers: [["S1":20],["S2":18]])
         
         context.insert(module)
         

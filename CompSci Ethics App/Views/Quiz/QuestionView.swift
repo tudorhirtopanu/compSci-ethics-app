@@ -210,7 +210,7 @@ struct QuestionView: View {
         let config = ModelConfiguration(isStoredInMemoryOnly: true)
         
         let container = try ModelContainer(for: ModuleData.self, configurations: config)
-        let example = ModuleData(name: "Ethics", totalQuestions: 43)
+        let example = ModuleData(name: "Ethics", totalQuestions: 43, sectionTotalQuestions: [["S1":30],["S2":24]], sectionCorrectAnswers: [["S1":20],["S2":18]])
         
         return QuestionView(moduleItem: example)
             .environmentObject(QuestionsManager())
