@@ -211,15 +211,7 @@ struct QuestionView: View {
                 .environmentObject(qm)
         })
         .onAppear{
-//            for q in qm.quiz[qm.section.rawValue].questions {
-//                
-//                let key = q.subjectTag
-//                
-//                while(qm.subjectCorrectAnswers.contains { $0.keys.contains(key) } == false){
-//                    let key = q.subjectTag
-//                        qm.subjectCorrectAnswers.append([key: 0])
-//                    }
-//                }
+
             
             // For Correct Answers
             qm.createArrayOfSectionDictionaries(questions: qm.quiz[qm.section.rawValue].questions, dictionaryArray: &qm.subjectCorrectAnswers)
