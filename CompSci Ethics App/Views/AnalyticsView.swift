@@ -64,13 +64,19 @@ struct AnalyticsView: View {
                                         
                                         let percentage = returnPercentage(correct: correctAnswers, total: totalQuestions)
                                         
-                                        Text("\(key): \(percentage)%")
+                                        HStack {
+                                            Text("•")
+                                                .font(.footnote)
+                                            Text("\(key): \(percentage)%")
+                                                .font(.footnote)
+                                        }
                                     }
                                 }
                             }
                         }
                         
                     }
+                    .padding(.bottom, 10)
                 }.onDelete(perform: deleteItem)
             }
             
