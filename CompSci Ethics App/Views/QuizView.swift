@@ -36,6 +36,13 @@ struct QuizView: View {
         
         ScrollView {
             VStack(alignment:.leading){
+
+                Button(action: {
+                    print(qm.section)
+                    print(qm.subjectTotalQuestions)
+                }, label: {
+                    Text("Print Info")
+                })
                 
                 Text("Select a Section")
                 
@@ -51,6 +58,8 @@ struct QuizView: View {
                         qm.section = .ethics
                         
                         selectItemToEdit(sectionName: qm.quiz[QuizSections.ethics.rawValue].title)
+                        
+                        //itemToEdit
                         
                     }, label: {
                         ZStack {

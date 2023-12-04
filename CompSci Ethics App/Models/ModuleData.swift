@@ -11,7 +11,7 @@ import SwiftData
 @Model
 class ModuleData: Identifiable {
     
-    var id:String
+    //var id:String
     @Attribute(.unique) var name: String
     var totalQuestions:Int
     var sectionTotalQuestions:[[String:Int]]
@@ -23,7 +23,7 @@ class ModuleData: Identifiable {
 //        self.totalQuestions = totalQuestions
 //    }
     init(name: String, totalQuestions: Int, sectionTotalQuestions: [[String : Int]], sectionCorrectAnswers: [[String : Int]]) {
-        id = UUID().uuidString
+        //id = UUID().uuidString
         self.name = name
         self.totalQuestions = totalQuestions
         self.sectionTotalQuestions = sectionTotalQuestions

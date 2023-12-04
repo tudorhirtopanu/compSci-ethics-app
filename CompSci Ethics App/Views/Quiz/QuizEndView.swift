@@ -15,13 +15,14 @@ struct QuizEndView: View {
     @Environment(\.modelContext) var context
     
     @Bindable var moduleItem:ModuleData
+    
             
     var body: some View {
         VStack {
             Text("End of Quiz")
             
             Button(action: {
-                nm.goBackOne()
+                nm.popToRoot()
             }, label: {
                 Text("Back")
             })
@@ -37,10 +38,10 @@ struct QuizEndView: View {
         
     }
     
-    private func mergeDictionaries(oldDict:[[String:Int]], newDict:[[String:Int]]) -> [[String:Int]] {
+    private func mergeDictionaries(oldDict: [[String: Int]], newDict: [[String: Int]]) -> [[String: Int]] {
         
-        var updatedSectionCorrectAnswers = oldDict
-        
+        var updatedSectionCorrectAnswers = oldDict.map { $0 }
+
         // Merge dictionaries in updatedSectionCorrectAnswers and qm.subjectCorrectAnswers
         for subjectCorrectAnswers in newDict {
             for (key, value) in subjectCorrectAnswers {
@@ -49,13 +50,30 @@ struct QuizEndView: View {
                     updatedSectionCorrectAnswers[existingIndex][key] = existingValue + value
                 } else {
                     // If the key doesn't exist, add a new dictionary to updatedSectionCorrectAnswers
-                    //updatedSectionCorrectAnswers.append([key: value])
+                    updatedSectionCorrectAnswers.append([key: value])
                 }
             }
         }
-        
+
         return updatedSectionCorrectAnswers
-        
+    }
+    
+    func updateDictionaries(oldDicts: [[String: Int]], newDicts: [[String: Int]]) -> [[String: Int]] {
+        var updatedDicts = oldDicts
+
+        for newDict in newDicts {
+            for (key, value) in newDict {
+                if let existingIndex = updatedDicts.firstIndex(where: { $0.keys.contains(key) }),
+                   let existingValue = updatedDicts[existingIndex][key] {
+                    updatedDicts[existingIndex][key] = existingValue + value
+                } else {
+                    // If the key doesn't exist, add a new dictionary to updatedDicts
+                    updatedDicts.append([key: value])
+                }
+            }
+        }
+
+        return updatedDicts
     }
     
     private func addItem() {
@@ -81,10 +99,15 @@ struct QuizEndView: View {
 //               }
 //           }
    */
+        let correctAnswers = updateDictionaries(oldDicts: moduleItem.sectionCorrectAnswers, newDicts: qm.subjectCorrectAnswers)
+
+        let totalQuestions = updateDictionaries(oldDicts: moduleItem.sectionTotalQuestions, newDicts: qm.subjectTotalQuestions)
         
-        let correctAnswers = mergeDictionaries(oldDict: moduleItem.sectionCorrectAnswers, newDict: qm.subjectCorrectAnswers)
-        let totalQuestions = mergeDictionaries(oldDict: moduleItem.sectionTotalQuestions, newDict: qm.subjectTotalQuestions)
-        
+        print(moduleItem.name)
+        print(moduleItem.sectionTotalQuestions) // this is causing the bug
+        print(qm.subjectTotalQuestions)
+        print("----------")
+        print(moduleItem.name)
         print(qm.subjectTotalQuestions)
         print(totalQuestions)
         

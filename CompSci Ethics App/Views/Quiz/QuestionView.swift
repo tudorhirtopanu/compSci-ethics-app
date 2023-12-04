@@ -39,7 +39,7 @@ struct QuestionView: View {
         VStack {
             
             Button(action: {
-                print("Correct Answer dictionary \(qm.subjectCorrectAnswers)")
+               // print("Correct Answer dictionary \(qm.subjectCorrectAnswers)")
                 
                 print("Total Questions dictionary \(qm.subjectTotalQuestions)")
             }, label: {

@@ -7,6 +7,7 @@
 
 import SwiftData
 import SwiftUI
+import Charts
 
 struct AnalyticsView: View {
         
@@ -18,17 +19,34 @@ struct AnalyticsView: View {
             
             List{
                 ForEach(items) {i in
+                    
                     VStack{
+                        
+//                        Chart {
+//                            
+////                            ForEach(i.){
+////                                
+////                            }
+//                            
+//                        }
+//                        
                         Text(i.name)
                         Text(String(i.totalQuestions))
                         
                         ForEach(i.sectionTotalQuestions, id: \.self) { topic in
-                                        HStack {
-                                            ForEach(topic.sorted(by: <), id: \.key) { key, value in
-                                                Text("\(key): \(value)")
-                                            }
-                                        }
+
+                            HStack {
+                                ForEach(topic.sorted(by: <), id: \.key) { key, value in
+                                    if let totalQuestions = i.sectionTotalQuestions.first(where: { $0[key] != nil })?[key],
+                                       let correctAnswers = i.sectionCorrectAnswers.first(where: { $0[key] != nil })?[key] {
+                                        
+                                        let percentage = returnPercentage(correct: correctAnswers, total: totalQuestions)
+                                        
+                                        Text("\(key): \(percentage)%")
                                     }
+                                }
+                            }
+                        }
                         
                     }
                 }.onDelete(perform: deleteItem)
@@ -37,6 +55,7 @@ struct AnalyticsView: View {
             
             Button(action: {
                 addSample()
+                
             }, label: {
                 Text("Add")
             })
@@ -56,7 +75,27 @@ struct AnalyticsView: View {
         for index in indexSet {
             let items = items[index]
             context.delete(items)
+            
+            do {
+               try context.save()
+            } catch {
+                print("Error saving")
+            }
         }
+    }
+    
+    func calculatePercentage(correct: Int, total: Int) -> Double {
+        guard total > 0 else {
+            return 0.0
+        }
+        return Double(correct) / Double(total) * 100.0
+    }
+    
+    func returnPercentage(correct:Int, total:Int) -> Int {
+        
+        let percentage = calculatePercentage(correct: correct, total: total)
+        
+        return Int(percentage)
     }
     
 }

@@ -45,6 +45,7 @@
 		8B7A38092B1B4B0700F2DFB9 /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A38082B1B4B0700F2DFB9 /* AnalyticsView.swift */; };
 		8B7A380B2B1B4B4D00F2DFB9 /* ModuleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A380A2B1B4B4D00F2DFB9 /* ModuleData.swift */; };
 		8B7A380F2B1CAB2700F2DFB9 /* previewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A380E2B1CAB2700F2DFB9 /* previewContainer.swift */; };
+		8B87C2BB2B1E2AA900E75209 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B87C2BA2B1E2AA900E75209 /* BarChartView.swift */; };
 		8BDA61742B0F762B00962DFE /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDA61732B0F762B00962DFE /* NavigationManager.swift */; };
 		8BDA61762B0F7D7900962DFE /* IPBasics2.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8BDA61752B0F7D7900962DFE /* IPBasics2.mov */; };
 		8BDA61782B0F7FCC00962DFE /* Legal.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BDA61772B0F7FCC00962DFE /* Legal.json */; };
@@ -112,6 +113,7 @@
 		8B7A38082B1B4B0700F2DFB9 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
 		8B7A380A2B1B4B4D00F2DFB9 /* ModuleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleData.swift; sourceTree = "<group>"; };
 		8B7A380E2B1CAB2700F2DFB9 /* previewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = previewContainer.swift; sourceTree = "<group>"; };
+		8B87C2BA2B1E2AA900E75209 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		8BDA61732B0F762B00962DFE /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		8BDA61752B0F7D7900962DFE /* IPBasics2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IPBasics2.mov; sourceTree = "<group>"; };
 		8BDA61772B0F7FCC00962DFE /* Legal.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Legal.json; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				8B1454842B0D446A001AB56D /* Data */,
 				8B1454942B0D59C8001AB56D /* Services */,
 				8B14548A2B0D4DD6001AB56D /* Resources */,
+				8B87C2B82B1E29B400E75209 /* CustomCharts */,
 				8B7A380D2B1CAB0A00F2DFB9 /* PreviewHelpers */,
 				8B1454712B0BF75E001AB56D /* Preview Content */,
 				8B14546F2B0BF75E001AB56D /* Assets.xcassets */,
@@ -345,6 +348,14 @@
 			path = PreviewHelpers;
 			sourceTree = "<group>";
 		};
+		8B87C2B82B1E29B400E75209 /* CustomCharts */ = {
+			isa = PBXGroup;
+			children = (
+				8B87C2BA2B1E2AA900E75209 /* BarChartView.swift */,
+			);
+			path = CustomCharts;
+			sourceTree = "<group>";
+		};
 		8BDA617D2B0FE73200962DFE /* Legal */ = {
 			isa = PBXGroup;
 			children = (
@@ -470,6 +481,7 @@
 				8BDA61902B121ECC00962DFE /* GDPRView.swift in Sources */,
 				8B1454932B0D5785001AB56D /* IntellectualPropertyData.swift in Sources */,
 				8BDA618C2B121C8900962DFE /* DataProtectionAct.swift in Sources */,
+				8B87C2BB2B1E2AA900E75209 /* BarChartView.swift in Sources */,
 				8B7A380F2B1CAB2700F2DFB9 /* previewContainer.swift in Sources */,
 				8B29EEBA2B152385006F6EEE /* ProfessionalEthicsView.swift in Sources */,
 				8B14546E2B0BF75C001AB56D /* RootView.swift in Sources */,
