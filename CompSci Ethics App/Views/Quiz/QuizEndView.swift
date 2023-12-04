@@ -16,10 +16,54 @@ struct QuizEndView: View {
     
     @Bindable var moduleItem:ModuleData
     
+    
             
     var body: some View {
         VStack {
+            
             Text("End of Quiz")
+                .font(.title)
+                .fontWeight(.medium)
+            
+            Spacer()
+
+            let totalQuestionsNum = fetchValueForDictionary(dictionaryArray: qm.subjectTotalQuestions)
+            let correctAnswersNum = fetchValueForDictionary(dictionaryArray: qm.subjectCorrectAnswers)
+            
+            let percentage = returnPercentage(correct: correctAnswersNum, total: totalQuestionsNum)
+            
+            VStack {
+                Text(String(percentage)+"%")
+                    .font(.largeTitle)
+                Text("Quiz Percentage")
+                    .font(.footnote)
+            }
+            .padding(.bottom)
+            
+            
+            
+            ForEach(qm.subjectTotalQuestions, id: \.self){topic in
+                
+                ForEach(topic.sorted(by: <), id: \.key) { key, value in
+                    
+                    
+                    if let totalQuestions = qm.subjectTotalQuestions.first(where: { $0[key] != nil })?[key],
+                       let correctAnswers = qm.subjectCorrectAnswers.first(where: { $0[key] != nil })?[key] {
+                        
+                        HStack{
+                            Text(key+":")
+                            Text(String(correctAnswers))
+                            Text("/")
+                            Text(String(totalQuestions))
+                        }
+                        
+                    }
+
+                }
+                
+            }
+            
+            Spacer()
             
             Button(action: {
                 nm.popToRoot()
@@ -35,6 +79,31 @@ struct QuizEndView: View {
         }
         
         
+        
+    }
+    
+    func returnPercentage(correct:Int, total:Int) -> Int {
+        
+        let percentage = calculatePercentage(correct: correct, total: total)
+        
+        return Int(percentage)
+    }
+    
+    func calculatePercentage(correct: Int, total: Int) -> Double {
+        guard total > 0 else {
+            return 0.0
+        }
+        return Double(correct) / Double(total) * 100.0
+    }
+    
+    private func fetchValueForDictionary(dictionaryArray:[[String:Int]])-> Int{
+        
+        let totalSum = dictionaryArray
+            .flatMap{$0.values}
+            .reduce(0,+)
+        
+        
+        return totalSum
         
     }
     
@@ -82,23 +151,7 @@ struct QuizEndView: View {
         
         let previousTotal = moduleItem.totalQuestions
         let newTotal = previousTotal + qm.quiz[qm.section.rawValue].questions.count
-        
-  /*
-//        var updatedSectionCorrectAnswers = moduleItem.sectionCorrectAnswers
-//           
-//           // Merge dictionaries in updatedSectionCorrectAnswers and qm.subjectCorrectAnswers
-//           for subjectCorrectAnswers in qm.subjectCorrectAnswers {
-//               for (key, value) in subjectCorrectAnswers {
-//                   if let existingIndex = updatedSectionCorrectAnswers.firstIndex(where: { $0.keys.contains(key) }),
-//                      let existingValue = updatedSectionCorrectAnswers[existingIndex][key] {
-//                       updatedSectionCorrectAnswers[existingIndex][key] = existingValue + value
-//                   } else {
-//                       // If the key doesn't exist, add a new dictionary to updatedSectionCorrectAnswers
-//                       updatedSectionCorrectAnswers.append([key: value])
-//                   }
-//               }
-//           }
-   */
+
         let correctAnswers = updateDictionaries(oldDicts: moduleItem.sectionCorrectAnswers, newDicts: qm.subjectCorrectAnswers)
 
         let totalQuestions = updateDictionaries(oldDicts: moduleItem.sectionTotalQuestions, newDicts: qm.subjectTotalQuestions)
@@ -129,6 +182,8 @@ struct QuizEndView: View {
         
         return QuizEndView(moduleItem: example)
             .environmentObject(NavigationManager())
+            .environmentObject(QuestionsManager())
+            .modelContainer(container)
     } catch {
         fatalError("Failed to create model container")
     }
