@@ -927,6 +927,150 @@
                 ],
                 "sectionTag":"Intellectual Property",
                 "subjectTag":"Protecting Intellectual Property"
+            },
+            {
+                "id":"ip_5",
+                "text":"What is the term used to describe the exclusive rights granted to the creator of an original work?",
+                "answers": [
+                    {
+                        "text": "Trademark",
+                        "correct": false
+                    },
+                    {
+                        "text": "Patent",
+                        "correct": false
+                    },
+                    {
+                        "text": "Copyright",
+                        "correct": true
+                    },
+                    {
+                        "text": "None",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Intellectual Property",
+                "subjectTag":"Copyright"
+            },
+            {
+                "id":"ip_6",
+                "text":"Traditionally, what types of inventions are eligible for patent protection?",
+                "answers": [
+                    {
+                        "text": "Abstract ideas",
+                        "correct": false
+                    },
+                    {
+                        "text": "Natural phenomena",
+                        "correct": false
+                    },
+                    {
+                        "text": "Literary works",
+                        "correct": false
+                    },
+                    {
+                        "text": "Processes, machines, articles of manufacture, and compositions of matter",
+                        "correct": true
+                    }
+                ],
+                "sectionTag":"Intellectual Property",
+                "subjectTag":"Patents"
+            },
+            {
+                "id":"ip_7",
+                "text":"Which of the following is an example of a work typically protected by copyright?",
+                "answers": [
+                    {
+                        "text": "Mathematical formula",
+                        "correct": false
+                    },
+                    {
+                        "text": "New Invention",
+                        "correct": false
+                    },
+                    {
+                        "text": "Scientific discovery",
+                        "correct": false
+                    },
+                    {
+                        "text": "Musical composition",
+                        "correct": true
+                    }
+                ],
+                "sectionTag":"Intellectual Property",
+                "subjectTag":"Copyright"
+            },
+            {
+                "id":"ip_8",
+                "text":"What is the purpose of the patent application process?",
+                "answers": [
+                    {
+                        "text": "To establish copyright protection",
+                        "correct": false
+                    },
+                    {
+                        "text": "To obtain a trademark",
+                        "correct": false
+                    },
+                    {
+                        "text": "To secure exclusive rights to an invention",
+                        "correct": true
+                    },
+                    {
+                        "text": "To register a trade secret",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Intellectual Property",
+                "subjectTag":"Copyright"
+            },
+            {
+                "id":"ip_9",
+                "text":"Which of the following is NOT a requirement for a work to be eligible for copyright protection?",
+                "answers": [
+                    {
+                        "text": "Originality",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fixation in a tangible medium",
+                        "correct": false
+                    },
+                    {
+                        "text": "Public disclosure",
+                        "correct": true
+                    },
+                    {
+                        "text": "Creative expression",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Intellectual Property",
+                "subjectTag":"Copyright"
+            },
+            {
+                "id":"ip_10",
+                "text":"Which of the following is NOT a requirement for a work to be eligible for copyright protection?",
+                "answers": [
+                    {
+                        "text": "Originality",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fixation in a tangible medium",
+                        "correct": false
+                    },
+                    {
+                        "text": "Public disclosure",
+                        "correct": true
+                    },
+                    {
+                        "text": "Creative expression",
+                        "correct": false
+                    }
+                ],
+                "sectionTag":"Intellectual Property",
+                "subjectTag":"Copyright"
             }
         ]
     }
