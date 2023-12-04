@@ -20,18 +20,40 @@ struct AnalyticsView: View {
             List{
                 ForEach(items) {i in
                     
-                    VStack{
+                    VStack(alignment: .leading){
                         
-//                        Chart {
-//                            
-////                            ForEach(i.){
-////                                
-////                            }
-//                            
-//                        }
-//                        
-                        Text(i.name)
-                        Text(String(i.totalQuestions))
+                        HStack{
+                            Text(i.name)
+                                .font(.headline)
+                            Spacer()
+                            Text("\(i.totalQuestions) Questions")
+                                .font(.footnote)
+                        }
+                        
+                        Chart {
+                            
+                            ForEach(i.sectionTotalQuestions, id: \.self) { topic in
+
+                                ForEach(topic.sorted(by: <), id: \.key) { key, value in
+                                    
+                                    if let totalQuestions = i.sectionTotalQuestions.first(where: { $0[key] != nil })?[key],
+                                       let correctAnswers = i.sectionCorrectAnswers.first(where: { $0[key] != nil })?[key] {
+                                        
+                                        let percentage = returnPercentage(correct: correctAnswers, total: totalQuestions)
+                                        
+                                        BarMark(x: PlottableValue.value("Subject", key), y: .value("%", percentage))
+                                            .foregroundStyle(Color.blue.gradient)
+                                        
+                                    }
+                                }
+                                        
+                                        
+                                        
+                            }
+                            
+                        }
+                        .frame(height: 150)
+                        .chartYScale(domain: 0...100)
                         
                         ForEach(i.sectionTotalQuestions, id: \.self) { topic in
 

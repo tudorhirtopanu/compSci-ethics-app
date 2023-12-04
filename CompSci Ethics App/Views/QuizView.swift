@@ -166,7 +166,7 @@ struct QuizView: View {
         }
         
         // Initialize 0 for each key
-        var arrayOfDictionaries = createDictionariesFromStrings(strings: subjects)
+        let arrayOfDictionaries = createDictionariesFromStrings(strings: subjects)
         
         //print(arrayOfDictionaries)
         
